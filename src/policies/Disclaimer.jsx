@@ -26,7 +26,7 @@ const Disclaimer = () => {
           <section className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
             <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">General disclaimer</h2>
             <p>
-              The information provided by <strong>appliancerookies</strong> ("we," "us," or "our") on <a href="https://appliancerookies.shop/" className="text-orange-600 hover:underline">https://appliancerookies.shop/</a> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+              The information provided by <strong>Appliance Rookies</strong> ("we," "us," or "our") on <a href="https://appliancerookies.shop/" className="text-orange-600 hover:underline">https://appliancerookies.shop/</a> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
             </p>
             <p className="font-bold text-gray-950 mt-4">
               UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
@@ -70,8 +70,8 @@ const Disclaimer = () => {
             <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">Contact us</h2>
             <p>If you have any questions regarding this disclaimer, please contact us at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold text-gray-950">
-              appliancerookies<br />
-              B. W. Cooper, New Orleans, LA, USA<br />
+              Appliance Rookies<br />
+              2066 Fairview Ave, Prattville, AL 36066, USA<br />
               United States<br />
               Email: <a href="mailto:info@appliancerookies.shop" className="text-orange-600 hover:underline">info@appliancerookies.shop</a>
             </address>
@@ -83,4 +83,3 @@ const Disclaimer = () => {
 };
 
 export default Disclaimer;
-

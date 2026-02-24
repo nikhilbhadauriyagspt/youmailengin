@@ -43,7 +43,13 @@ const Footer = () => {
       { name: 'Air conditioner', path: '/service/air-conditioner' },
       { name: 'Television', path: '/service/television' },
       { name: 'Water purifier', path: '/service/water-purifier' },
+      { name: 'Microwave oven', path: '/service/microwave-oven' },
       { name: 'Kitchen chimney', path: '/service/kitchen-chimney' },
+      { name: 'Dishwasher', path: '/service/dishwasher' },
+      { name: 'Coffee maker', path: '/service/coffee-maker' },
+      { name: 'Oven & gas stove', path: '/service/oven-stove' },
+      { name: 'Clothes dryer', path: '/service/clothes-dryer' },
+      { name: 'Other appliances', path: '/service/other-appliances' },
     ],
     support: [
       { name: 'Privacy policy', path: '/privacy-policy' },
@@ -62,7 +68,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link to="/" className="flex items-center gap-4 group mb-10">
-              <img src="/logo-rok.png" alt="ApplianceRookies" className="h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
+              <img src="/logo-rok.png" alt="Appliance Rookies" className="h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
             </Link>
             <p className="text-gray-400 text-[15px] font-medium leading-relaxed max-w-sm mb-10">
               Your trusted partner for high-quality appliance repairs. We deliver precision and reliability to every home since 2026.
@@ -79,7 +85,7 @@ const Footer = () => {
                   <MapPin size={18} />
                 </div>
                 <p className="text-sm font-bold text-gray-950 leading-tight pt-2">
-                  B. W. Cooper, New Orleans, LA, USA
+                  2066 Fairview Ave, Prattville, AL 36066, USA
                 </p>
               </div>
             </div>
@@ -162,15 +168,11 @@ const Footer = () => {
                <ShieldCheck size={18} className="text-orange-600" />
                <span className="text-[10px] font-bold text-gray-950 uppercase tracking-widest">SSL secured</span>
             </div>
-            <div className="flex items-center gap-3">
-               <CheckCircle2 size={18} className="text-orange-600" />
-               <span className="text-[10px] font-bold text-gray-950 uppercase tracking-widest">Master certified</span>
-            </div>
           </div>
           
           <div className="text-center md:text-right">
             <p className="text-gray-400 text-[11px] font-bold uppercase tracking-widest">
-              &copy; {currentYear} ApplianceRookies. built with precision.
+              &copy; {currentYear} Appliance Rookies. built with precision.
             </p>
           </div>
         </div>
@@ -181,4 +183,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

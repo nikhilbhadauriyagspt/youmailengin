@@ -25,13 +25,13 @@ const PrivacyPolicy = () => {
         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
           <section>
             <p>
-              This Privacy Notice for appliancerookies ("<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), describes how and why we
+              This Privacy Notice for Appliance Rookies ("<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), describes how and why we
               might access, collect, store, use, and/or share ("<strong>process</strong>") your personal information when
               you use our services ("<strong>Services</strong>"), including when you:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Visit our website at <a href="https://appliancerookies.shop/" className="text-orange-600 hover:text-gray-950">https://appliancerookies.shop/</a> or any website of ours that links to this Privacy Notice</li>
-              <li>Use appliancerookies. At appliancerookies, we focus on care accuracy and timely service. Our business is built on providing diagnostic clarity and performing repairs that aim to extend the lifecycle of your household appliances. We serve residential clients with a commitment to maintaining standard operating procedures.</li>
+              <li>Use Appliance Rookies. At Appliance Rookies, we focus on care accuracy and timely service. Our business is built on providing diagnostic clarity and performing repairs that aim to extend the lifecycle of your household appliances. We serve residential clients with a commitment to maintaining standard operating procedures.</li>
               <li>Engage with us in other related ways, including any marketing or events</li>
             </ul>
             <p>
@@ -277,8 +277,8 @@ const PrivacyPolicy = () => {
             <h3 className="text-xl font-bold text-gray-950 border-b border-gray-100 pb-2 mb-4 tracking-tight">13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
             <p>If you have questions or comments about this notice, you may email us at <strong className="text-gray-900">info@appliancerookies.shop</strong> or contact us by post at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold text-gray-900">
-              appliancerookies<br />
-              B. W. Cooper, New Orleans, LA, USA<br />
+              Appliance Rookies<br />
+              2066 Fairview Ave, Prattville, AL 36066, USA<br />
               United States
             </address>
           </section>
@@ -294,4 +294,3 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
-

@@ -20,7 +20,7 @@ const AboutOrganization = () => {
             </h2>
 
             <p className="text-gray-500 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-16">
-              At ApplianceRookies, we believe in honest service and taking good care of your home machines. We work hard to make sure every repair is done perfectly the very first time.
+              At Appliance Rookies, we believe in honest service and taking good care of your home machines. We work hard to make sure every repair is done perfectly the very first time.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-16">
@@ -86,4 +86,7 @@ const AboutOrganization = () => {
 };
 
 export default AboutOrganization;
+
+
+
 

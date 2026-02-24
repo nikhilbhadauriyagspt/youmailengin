@@ -24,7 +24,7 @@ const About = () => {
               </h1>
               
               <p className="text-gray-500 text-lg md:text-xl font-medium leading-relaxed max-w-xl mb-12 border-l-2 border-gray-100 pl-8">
-                We started ApplianceRookies with one simple goal: to fix your machines the right way. We use better parts, stay honest about prices, and make sure your appliances stay reliable for years to come.
+                We started Appliance Rookies with one simple goal: to fix your machines the right way. We use better parts, stay honest about prices, and make sure your appliances stay reliable for years to come.
               </p>
 
               <div className="flex">
@@ -42,7 +42,7 @@ const About = () => {
 
             <div className="lg:col-span-5">
               <div className="relative aspect-[4/5] rounded-[48px] overflow-hidden bg-gray-100 shadow-2xl">
-                <img loading="lazy" src="/about-child2.jpg" alt="Our service expertise" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" />
+                <img loading="lazy" src="/about-mainn.jpg" alt="Our service expertise" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" />
                 <div className="absolute inset-0 bg-orange-600/5 mix-blend-multiply" />
               </div>
             </div>
@@ -123,7 +123,7 @@ const About = () => {
             {/* Right Visual Collage */}
             <div className="w-full lg:w-[55%] relative flex items-center">
               <div className="relative w-full aspect-square md:aspect-video lg:aspect-square rounded-[48px] overflow-hidden shadow-2xl border-8 border-gray-50">
-                <img src="/about-main.jpg" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" alt="Our service quality" />
+                <img src="/about-child2.jpg" className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" alt="Our service quality" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-950/40 via-transparent to-transparent" />
                 
                 {/* Floating Badge */}
@@ -182,7 +182,7 @@ const About = () => {
                 Need a professional fix?
               </h2>
               <p className="text-gray-400 text-sm md:text-base font-medium mb-10 leading-relaxed">
-                Join thousands of happy customers who trust ApplianceRookies for their home machine care and support.
+                Join thousands of happy customers who trust Appliance Rookies for their home machine care and support.
               </p>
               <Link to="/contact" className="inline-flex items-center gap-3 px-10 py-4 bg-orange-600 text-white font-bold text-[13px] hover:bg-white hover:text-gray-950 transition-all rounded-xl active:scale-95 group">
                 Contact us now <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -217,4 +217,7 @@ const TimelineStep = ({ step, title, desc }) => (
 );
 
 export default About;
+
+
+
 

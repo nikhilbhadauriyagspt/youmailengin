@@ -26,7 +26,7 @@ const CookiePolicy = () => {
         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
           <section>
             <p>
-              This Cookie Policy explains how appliancerookies (“<strong>Company</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”) uses
+              This Cookie Policy explains how Appliance Rookies (“<strong>Company</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “<strong>our</strong>”) uses
               cookies and similar tracking technologies when you visit our website
               <a href="https://appliancerookies.shop/" className="text-orange-600 hover:text-gray-950"> https://appliancerookies.shop/</a> (the “<strong>Website</strong>”). This policy should be read together with our
               <Link to="/privacy-policy" className="text-orange-600 hover:underline font-bold"> PRIVACY POLICY</Link> and <Link to="/terms-of-service" className="text-orange-600 hover:underline font-bold">TERMS OF SERVICE</Link>.
@@ -46,7 +46,7 @@ const CookiePolicy = () => {
 
           <section>
             <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">2. How We Use Cookies</h2>
-            <p>appliancerookies uses cookies and similar technologies to:</p>
+            <p>Appliance Rookies uses cookies and similar technologies to:</p>
             <ul className="list-disc pl-10 space-y-2">
               <li>Ensure the Website functions properly</li>
               <li>Maintain security and prevent fraudulent activity</li>
@@ -115,7 +115,7 @@ const CookiePolicy = () => {
             <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">6. Do Not Track Signals</h2>
             <p>
               Some browsers offer a “Do Not Track” (DNT) feature. At this time, there is no uniform
-              industry standard for recognizing DNT signals, and appliancerookies does not currently
+              industry standard for recognizing DNT signals, and Appliance Rookies does not currently
               respond to such signals <Link to="/privacy-policy" className="text-orange-600 hover:underline font-bold">PRIVACY POLICY</Link>.
             </p>
           </section>
@@ -129,8 +129,8 @@ const CookiePolicy = () => {
             <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">8. Contact Us</h2>
             <p>If you have questions or concerns about this Cookie Policy or our use of cookies, you may contact us at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold text-gray-900">
-              appliancerookies<br />
-              B. W. Cooper, New Orleans, LA, USA<br />
+              Appliance Rookies<br />
+              2066 Fairview Ave, Prattville, AL 36066, USA<br />
               United States<br />
               Email: <a href="mailto:info@appliancerookies.shop" className="text-orange-600">info@appliancerookies.shop</a>
             </address>
@@ -142,4 +142,3 @@ const CookiePolicy = () => {
 };
 
 export default CookiePolicy;
-

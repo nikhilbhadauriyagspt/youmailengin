@@ -75,9 +75,9 @@ const OvenGasStovePage = () => (
               { label: "OEM parts", val: "Guaranteed" },
               { label: "Safety run", val: "Deployment" }
             ].map((item, idx) => (
-              <div key={idx} className="p-6 rounded-[28px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all duration-500 group">
-                <div className="text-orange-600 font-black text-[9px] uppercase mb-2 tracking-[0.2em]">{item.label}</div>
-                <div className="text-gray-950 font-black text-[10px] uppercase tracking-tighter">{item.val}</div>
+              <div key={idx} className="p-8 rounded-[32px] bg-gray-50 border border-gray-100 text-center hover:bg-white hover:shadow-2xl hover:shadow-orange-600/5 transition-all duration-500 group">
+                <div className="text-orange-600 font-bold text-[11px] uppercase mb-3 tracking-[0.2em]">{item.label}</div>
+                <div className="text-gray-950 font-black text-[15px] uppercase tracking-tight">{item.val}</div>
               </div>
             ))}
           </div>
@@ -88,4 +88,8 @@ const OvenGasStovePage = () => (
 );
 
 export default OvenGasStovePage;
+
+
+
+
 

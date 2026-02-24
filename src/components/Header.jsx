@@ -61,7 +61,7 @@ const Header = () => {
           
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-4 group flex-shrink-0 relative z-10">
-            <img src="/logo-rok.png" alt="ApplianceRookies" className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
+            <img src="/logo-rok.png" alt="Appliance Rookies" className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105" />
           </Link>
 
           {/* Navigation Section (Centered) */}
@@ -89,12 +89,11 @@ const Header = () => {
                 }`}>
                   <div className="bg-white border border-gray-100 rounded-[32px] shadow-[0_40px_100px_rgba(0,0,0,0.08)] w-[900px] flex overflow-hidden text-left p-2">
                     <div className="flex-[2.5] p-10">
-                      <div className="flex items-center justify-between mb-10 border-b border-gray-50 pb-6">
+                      <div className="flex items-center mb-10 border-b border-gray-50 pb-6">
                         <div className="flex items-center gap-3">
                           <div className="w-1.5 h-1.5 bg-orange-600 rounded-full" />
                           <h3 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.4em]">Our specializations</h3>
                         </div>
-                        <Link to="/contact" className="text-[10px] font-bold text-orange-600 uppercase tracking-widest hover:underline underline-offset-4">View all solutions</Link>
                       </div>
                       
                       <div className="grid grid-cols-2 gap-y-6 gap-x-12">
@@ -212,4 +211,7 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
 

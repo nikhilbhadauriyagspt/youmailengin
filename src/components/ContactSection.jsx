@@ -87,7 +87,7 @@ const ContactSection = () => {
                  <MapPin size={22} />
                </div>
                <h3 className="text-lg font-bold text-gray-950 mb-1">Visit our office</h3>
-               <span className="text-[14px] font-bold text-gray-950 leading-relaxed uppercase">B. W. Cooper, New Orleans,<br />LA, USA</span>
+               <span className="text-[14px] font-bold text-gray-950 leading-relaxed uppercase">2066 Fairview Ave, Prattville,<br />AL 36066, USA</span>
             </div>
           </div>
 
@@ -140,16 +140,7 @@ const ContactSection = () => {
                   ></textarea>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-10 pt-4">
-                  <div className="flex items-center gap-4">
-                     <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center text-orange-600">
-                       <Globe size={18} />
-                     </div>
-                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-relaxed">
-                      Your data is safe <br /> & completely secured
-                     </p>
-                  </div>
-
+                <div className="flex flex-col sm:flex-row items-center justify-end gap-10 pt-4">
                   <button 
                     disabled={isSubmitting}
                     className="w-full sm:w-auto py-5 px-12 bg-gray-950 text-white rounded-xl font-bold text-[13px] hover:bg-orange-600 transition-all shadow-xl active:scale-95 flex items-center justify-center gap-3 disabled:opacity-50 cursor-pointer group"
@@ -173,4 +164,7 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
+
+
 

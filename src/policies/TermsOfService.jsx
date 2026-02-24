@@ -27,8 +27,8 @@ const TermsOfService = () => {
           <section>
             <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">Agreement to our legal terms</h2>
             <p>
-              We are appliancerookies ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company operating in Long Beach,
-              United States at B. W. Cooper, New Orleans, LA, USA.
+              We are Appliance Rookies ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company operating in Long Beach,
+              United States at 2066 Fairview Ave, Prattville, AL 36066, USA.
             </p>
             <p>
               We operate the website <a href="https://appliancerookies.shop/" className="text-orange-600 hover:text-gray-950">https://appliancerookies.shop/</a> (the "<strong>Site</strong>"), as well as any other related
@@ -36,18 +36,18 @@ const TermsOfService = () => {
               the "<strong>Services</strong>").
             </p>
             <p>
-              appliancerookies was founded on the principle that household repairs should be handled with
+              Appliance Rookies was founded on the principle that household repairs should be handled with
               the same level of precision as industrial maintenance. We recognize that modern appliances
               are complex electronic systems that require specialized knowledge and calibrated tools for
               effective servicing.
             </p>
             <p>
               You can contact us by email at <a href="mailto:info@appliancerookies.shop" className="text-orange-600">info@appliancerookies.shop</a>, or by
-              mail to B. W. Cooper, New Orleans, LA, USA.
+              mail to 2066 Fairview Ave, Prattville, AL 36066, USA.
             </p>
             <p>
               These Legal Terms constitute a legally binding agreement made between you, whether
-              personally or on behalf of an entity ("<strong>you</strong>"), and appliancerookies, concerning your access to
+              personally or on behalf of an entity ("<strong>you</strong>"), and Appliance Rookies, concerning your access to
               and use of the Services. You agree that by accessing the Services, you have read,
               understood, and agreed to be bound by all of these Legal Terms. <strong>IF YOU DO NOT AGREE
                 WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE
@@ -273,8 +273,8 @@ const TermsOfService = () => {
             <h3 className="text-xl font-bold text-gray-950 border-b border-gray-100 pb-2 mb-4 tracking-tight">21. CONTACT US</h3>
             <p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold text-gray-900">
-              appliancerookies<br />
-              B. W. Cooper, New Orleans, LA, USA<br />
+              Appliance Rookies<br />
+              2066 Fairview Ave, Prattville, AL 36066, USA<br />
               United States<br />
               <a href="mailto:info@appliancerookies.shop" className="text-orange-600 hover:underline">info@appliancerookies.shop</a>
             </address>
@@ -286,4 +286,3 @@ const TermsOfService = () => {
 };
 
 export default TermsOfService;
-

@@ -44,9 +44,9 @@ const RefundPolicy = () => {
               To request a refund, please email customer service at <a href="mailto:info@appliancerookies.shop" className="text-orange-600 font-bold hover:underline">info@appliancerookies.shop</a> with your service order number. After receiving your request, we will review the service performed and notify you of the status of your refund.
             </p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-6 leading-relaxed font-bold text-gray-900">
-              appliancerookies<br />
+              Appliance Rookies<br />
               Attn: Returns/Refunds<br />
-              B. W. Cooper, New Orleans, LA, USA<br />
+              2066 Fairview Ave, Prattville, AL 36066, USA<br />
               United States
             </address>
           </section>
@@ -76,8 +76,8 @@ const RefundPolicy = () => {
               If you have any questions concerning our refund policy, please contact us at:
             </p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold text-gray-900">
-              appliancerookies<br />
-              B. W. Cooper, New Orleans, LA, USA<br />
+              Appliance Rookies<br />
+              2066 Fairview Ave, Prattville, AL 36066, USA<br />
               United States<br />
               Email: <a href="mailto:info@appliancerookies.shop" className="text-orange-600 hover:underline">info@appliancerookies.shop</a>
             </address>
@@ -89,4 +89,3 @@ const RefundPolicy = () => {
 };
 
 export default RefundPolicy;
-

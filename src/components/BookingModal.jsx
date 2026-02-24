@@ -168,3 +168,6 @@ const BookingModal = ({ isOpen, onClose, serviceTitle }) => {
 
 export default BookingModal;
 
+
+
+

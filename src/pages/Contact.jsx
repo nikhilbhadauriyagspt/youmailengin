@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black tracking-[0.3em] text-orange-500 uppercase mb-8">
-                <Shield size={12} /> The ApplianceRookies Guarantee
+                <Shield size={12} /> The Appliance Rookies Guarantee
               </div>
               <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter leading-tight mb-8">
                 Your Trust is Our <br /><span className="text-blue-500 italic">Greatest Asset.</span>
@@ -47,4 +47,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
 
