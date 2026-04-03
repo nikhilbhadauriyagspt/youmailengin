@@ -17,10 +17,10 @@ const Contact = () => {
           
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black tracking-[0.3em] text-orange-500 uppercase mb-8">
-                <Shield size={12} /> The Appliance Rookies Guarantee
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[9px] font-black tracking-[0.3em] text-orange-500  mb-8">
+                <Shield size={12} /> The All About Drivers Guarantee
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter leading-tight mb-8">
+              <h2 className="text-4xl md:text-5xl font-black text-white er leading-tight mb-8">
                 Your Trust is Our <br /><span className="text-blue-500 italic">Greatest Asset.</span>
               </h2>
               <p className="text-gray-400 text-lg font-medium leading-relaxed max-w-md">
@@ -30,12 +30,12 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="p-8 rounded-[32px] bg-white/5 border border-white/10">
                 <Clock className="text-blue-500 mb-4" size={24} />
-                <h4 className="text-white font-black text-sm uppercase tracking-tight mb-1">On-Time</h4>
+                <h4 className="text-white font-black text-sm   mb-1">On-Time</h4>
                 <p className="text-gray-500 text-[10px] font-bold">Punctuality is our priority</p>
               </div>
               <div className="p-8 rounded-[32px] bg-white/5 border border-white/10">
                 <Shield className="text-blue-500 mb-4" size={24} />
-                <h4 className="text-white font-black text-sm uppercase tracking-tight mb-1">Secure</h4>
+                <h4 className="text-white font-black text-sm   mb-1">Secure</h4>
                 <p className="text-gray-500 text-[10px] font-bold">Insured & Certified</p>
               </div>
             </div>

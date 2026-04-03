@@ -1,4 +1,4 @@
-import { Mail, Send, ArrowRight, MapPin, Globe, CheckCircle2, Phone } from 'lucide-react';
+import { Mail, ArrowRight, CheckCircle2, MapPin, MessageSquare, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
 const ContactSection = () => {
@@ -7,156 +7,207 @@ const ContactSection = () => {
 
   const encode = (data) => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...data })
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...data }),
     })
-    .then(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setTimeout(() => setIsSuccess(false), 5000);
-      e.target.reset();
-    })
-    .catch(error => {
-      console.error(error);
-      setIsSubmitting(false);
-    });
+      .then(() => {
+        setIsSubmitting(false);
+        setIsSuccess(true);
+        setTimeout(() => setIsSuccess(false), 5000);
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        setIsSubmitting(false);
+      });
   };
 
   return (
-    <section className="py-24 md:py-40 bg-white relative overflow-hidden" id="contact-hub">
+    <section className="py-20 md:py-28 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden" id="contact">
+      {/* Background Glow */}
+      <div className="absolute top-0 left-0 w-[420px] h-[420px] bg-blue-100/40 blur-[100px] rounded-full" />
+      <div className="absolute bottom-0 right-0 w-[420px] h-[420px] bg-blue-50 blur-[100px] rounded-full" />
+
       {/* Success Toast */}
-      <div className={`fixed bottom-8 right-8 z-[100] transition-all duration-500 transform ${isSuccess ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0 pointer-events-none'}`}>
-        <div className="bg-gray-950 text-white px-8 py-6 rounded-2xl shadow-2xl flex items-center gap-6">
-          <div className="w-10 h-10 rounded-xl bg-orange-600 flex items-center justify-center text-white">
+      <div
+        className={`fixed bottom-8 right-8 z-[100] transition-all duration-500 transform ${
+          isSuccess ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0 pointer-events-none'
+        }`}
+      >
+        <div className="bg-white border border-blue-100 text-zinc-900 px-6 py-5 rounded-3xl shadow-2xl flex items-center gap-4">
+          <div className="w-11 h-11 rounded-2xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/20">
             <CheckCircle2 size={20} />
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-bold">Message sent!</span>
-            <span className="text-xs text-gray-400 mt-0.5">We will call you very soon.</span>
+            <span className="text-sm font-bold">Success!</span>
+            <span className="text-xs text-zinc-500 mt-0.5">Your message has been sent.</span>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        
-        {/* Header Section: Centered & Refined */}
-        <div className="flex flex-col items-center text-center mb-24 max-w-2xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-6 h-[1.5px] bg-orange-600 rounded-full" />
-            <span className="text-[11px] font-bold text-orange-600 tracking-[0.3em] uppercase">
-              Get in touch
-            </span>
-            <div className="w-6 h-[1.5px] bg-orange-600 rounded-full" />
-          </div>
-          <h2 className="text-3xl md:text-5xl font-black text-gray-950 tracking-tight leading-tight mb-6">
-            We are here to <span className="text-orange-600 italic">help you.</span>
-          </h2>
-          <p className="text-gray-400 text-sm md:text-base font-medium leading-relaxed max-w-lg">
-            Have a question or need someone to fix your machine? Our team is ready to give you the best support.
-          </p>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-          
-          {/* Info Side (Left) */}
-          <div className="w-full lg:w-1/3 space-y-6">
-            <div className="p-8 rounded-[32px] bg-gray-50 border border-gray-100 group transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-orange-600/5">
-               <div className="w-12 h-12 rounded-xl bg-gray-950 flex items-center justify-center text-orange-500 mb-6 transition-transform duration-500 group-hover:scale-110">
-                 <Mail size={22} />
-               </div>
-               <h3 className="text-lg font-bold text-gray-950 mb-1">Send an email</h3>
-               <p className="text-gray-400 text-[12px] font-medium mb-4 uppercase tracking-wider">We usually reply within 2 hours.</p>
-               <a href="mailto:info@appliancerookies.shop" className="text-base font-bold text-orange-600 hover:text-gray-950 transition-colors">info@appliancerookies.shop</a>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+          {/* Left Side */}
+          <div className="lg:col-span-5 pt-2">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full mb-6 border border-blue-100">
+              <MessageSquare size={15} />
+              <span className="text-[11px] font-bold tracking-[0.18em] uppercase">Contact Hub</span>
             </div>
 
-            <div className="p-8 rounded-[32px] bg-gray-50 border border-gray-100 group transition-all duration-500 hover:bg-white hover:shadow-2xl hover:shadow-orange-600/5">
-               <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-orange-600 mb-6 border border-gray-100 transition-transform duration-500 group-hover:scale-110">
-                 <MapPin size={22} />
-               </div>
-               <h3 className="text-lg font-bold text-gray-950 mb-1">Visit our office</h3>
-               <span className="text-[14px] font-bold text-gray-950 leading-relaxed uppercase">2066 Fairview Ave, Prattville,<br />AL 36066, USA</span>
+            <h2 className="text-3xl md:text-5xl font-black text-zinc-900 leading-[1.08] tracking-tight mb-6">
+              Get in touch <br />
+              with our <span className="text-blue-600">experts.</span>
+            </h2>
+
+            <p className="text-zinc-500 text-base md:text-lg font-medium leading-8 mb-10 max-w-xl">
+              Have questions about driver compatibility, hardware issues, or system stability?
+              Reach out to our team for clear and dependable guidance.
+            </p>
+
+            <div className="space-y-5">
+              <div className="group flex items-center gap-5 p-5 md:p-6 bg-white rounded-[28px] border border-zinc-100 shadow-sm hover:shadow-[0_20px_50px_-20px_rgba(37,99,235,0.18)] transition-all duration-300">
+                <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white shrink-0">
+                  <Mail size={24} />
+                </div>
+                <div>
+                  <h4 className="text-[11px] font-bold text-zinc-400 tracking-[0.18em] uppercase mb-1.5">
+                    Email Us
+                  </h4>
+                  <a
+                    href="mailto:support@allaboutdrivers.shop"
+                    className="text-base md:text-lg font-bold text-zinc-900 hover:text-blue-600 transition-colors break-all"
+                  >
+                    support@allaboutdrivers.shop
+                  </a>
+                </div>
+              </div>
+
+              <div className="group flex items-center gap-5 p-5 md:p-6 bg-white rounded-[28px] border border-zinc-100 shadow-sm hover:shadow-[0_20px_50px_-20px_rgba(37,99,235,0.18)] transition-all duration-300">
+                <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white shrink-0">
+                  <MapPin size={24} />
+                </div>
+                <div>
+                  <h4 className="text-[11px] font-bold text-zinc-400 tracking-[0.18em] uppercase mb-1.5">
+                    Address
+                  </h4>
+                  <a
+                   
+                    className="text-base md:text-lg font-bold text-zinc-900 hover:text-blue-600 transition-colors"
+                  >
+                    130 S Fillmore St, Corinth, MS 38834, United States
+ 
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-zinc-200 text-sm font-medium text-zinc-600">
+                <Sparkles size={14} className="text-blue-600" />
+                Fast Response
+              </span>
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-zinc-200 text-sm font-medium text-zinc-600">
+                Technical Guidance
+              </span>
             </div>
           </div>
 
-          {/* Form Side (Right) */}
-          <div className="w-full lg:w-2/3 bg-white border border-gray-100 rounded-[48px] p-8 md:p-12 lg:p-16 shadow-xl shadow-black/[0.02]">
-             <form className="space-y-10" onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value="contact" />
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="space-y-3">
-                    <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest ml-1">Full name</label>
-                    <input 
+          {/* Right Side Form */}
+          <div className="lg:col-span-7">
+            <div className="bg-white rounded-[32px] md:rounded-[40px] p-6 md:p-8 lg:p-10 border border-zinc-100 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.18)]">
+              <div className="mb-8">
+                <h3 className="text-2xl md:text-3xl font-black text-zinc-900 tracking-tight mb-3">
+                  Send us a message
+                </h3>
+                <p className="text-zinc-500 text-sm md:text-base leading-7 font-medium">
+                  Fill out the form below and share the issue you are facing. We will review your
+                  message and get back to you with the right direction.
+                </p>
+              </div>
+
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-[11px] font-bold text-zinc-500 tracking-[0.12em] uppercase ml-1">
+                      Full Name
+                    </label>
+                    <input
                       required
                       name="fullName"
-                      type="text" 
-                      className="w-full bg-gray-50 border-none px-6 py-4 rounded-xl focus:bg-white focus:ring-2 focus:ring-orange-600/20 outline-none transition-all font-medium text-gray-950 placeholder:text-gray-300" 
-                      placeholder="John Smith" 
+                      type="text"
+                      className="w-full bg-slate-50 border border-transparent px-5 py-4 rounded-2xl focus:bg-white focus:border-blue-200 focus:ring-4 focus:ring-blue-50 outline-none transition-all font-semibold text-zinc-900 placeholder:text-zinc-400"
+                      placeholder="Enter your name"
                     />
                   </div>
-                  <div className="space-y-3">
-                    <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest ml-1">Email address</label>
-                    <input 
+
+                  <div className="space-y-2">
+                    <label className="text-[11px] font-bold text-zinc-500 tracking-[0.12em] uppercase ml-1">
+                      Email Address
+                    </label>
+                    <input
                       required
                       name="email"
-                      type="email" 
-                      className="w-full bg-gray-50 border-none px-6 py-4 rounded-xl focus:bg-white focus:ring-2 focus:ring-orange-600/20 outline-none transition-all font-medium text-gray-950 placeholder:text-gray-300" 
-                      placeholder="john@example.com" 
-                    />
-                  </div>
-                  <div className="space-y-3">
-                    <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest ml-1">Phone number</label>
-                    <input 
-                      required
-                      name="phone"
-                      type="tel" 
-                      className="w-full bg-gray-50 border-none px-6 py-4 rounded-xl focus:bg-white focus:ring-2 focus:ring-orange-600/20 outline-none transition-all font-medium text-gray-950 placeholder:text-gray-300" 
-                      placeholder="+1 (555) 000-0000" 
+                      type="email"
+                      className="w-full bg-slate-50 border border-transparent px-5 py-4 rounded-2xl focus:bg-white focus:border-blue-200 focus:ring-4 focus:ring-blue-50 outline-none transition-all font-semibold text-zinc-900 placeholder:text-zinc-400"
+                      placeholder="name@company.com"
                     />
                   </div>
                 </div>
 
-                <div className="space-y-3">
-                  <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest ml-1">Describe your problem</label>
-                  <textarea 
+                <div className="space-y-2">
+                  <label className="text-[11px] font-bold text-zinc-500 tracking-[0.12em] uppercase ml-1">
+                    Subject
+                  </label>
+                  <input
+                    name="subject"
+                    type="text"
+                    className="w-full bg-slate-50 border border-transparent px-5 py-4 rounded-2xl focus:bg-white focus:border-blue-200 focus:ring-4 focus:ring-blue-50 outline-none transition-all font-semibold text-zinc-900 placeholder:text-zinc-400"
+                    placeholder="Briefly mention your issue"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-[11px] font-bold text-zinc-500 tracking-[0.12em] uppercase ml-1">
+                    Your Inquiry
+                  </label>
+                  <textarea
                     required
                     name="message"
-                    rows="4" 
-                    className="w-full bg-gray-50 border-none px-6 py-4 rounded-xl focus:bg-white focus:ring-2 focus:ring-orange-600/20 outline-none transition-all font-medium text-gray-950 resize-none placeholder:text-gray-300" 
-                    placeholder="Tell us a little about what is wrong..."
-                  ></textarea>
+                    rows="5"
+                    className="w-full bg-slate-50 border border-transparent px-5 py-4 rounded-2xl focus:bg-white focus:border-blue-200 focus:ring-4 focus:ring-blue-50 outline-none transition-all font-semibold text-zinc-900 resize-none placeholder:text-zinc-400"
+                    placeholder="Tell us about your hardware or driver issue..."
+                  />
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-end gap-10 pt-4">
-                  <button 
-                    disabled={isSubmitting}
-                    className="w-full sm:w-auto py-5 px-12 bg-gray-950 text-white rounded-xl font-bold text-[13px] hover:bg-orange-600 transition-all shadow-xl active:scale-95 flex items-center justify-center gap-3 disabled:opacity-50 cursor-pointer group"
-                  >
-                    {isSubmitting ? (
-                      <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                    ) : (
-                      <>
-                        Send message <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                      </>
-                    )}
-                  </button>
-                </div>
-             </form>
+                <button
+                  disabled={isSubmitting}
+                  className="w-full py-5 bg-blue-600 text-white rounded-2xl font-bold text-sm hover:bg-zinc-900 transition-all shadow-xl shadow-blue-600/20 active:scale-[0.99] flex items-center justify-center gap-3 disabled:opacity-50 group"
+                >
+                  {isSubmitting ? (
+                    <div className="w-5 h-5 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                  ) : (
+                    <>
+                      Submit Message
+                      <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                    </>
+                  )}
+                </button>
+              </form>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -164,7 +215,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
-
-
-

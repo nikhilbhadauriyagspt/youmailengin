@@ -6,75 +6,52 @@ const Disclaimer = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen pt-44 pb-24">
-      <div className="container mx-auto px-6 max-w-5xl">
-        {/* Refined Heading */}
+    <div className="bg-white min-h-screen pt-44 pb-24 font-sans">
+      <div className="container mx-auto px-6 max-w-4xl">
+        {/* Simple Heading */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-[1.5px] bg-orange-600 rounded-full" />
-            <span className="text-[11px] font-bold text-orange-600 tracking-widest uppercase">
-              Legal notice
+            <div className="w-8 h-[1.5px] bg-blue-600 rounded-full" />
+            <span className="text-[11px] font-black text-blue-600 tracking-[0.3em] uppercase">
+              Legal Notice
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-gray-950 tracking-tight leading-tight mb-6">
-            Disclaimer for <span className="text-orange-600 italic font-medium lowercase">appliancerookies.</span>
+          <h1 className="text-4xl md:text-5xl font-black text-zinc-900 uppercase leading-tight mb-6 tracking-tighter">
+            Disclaimer
           </h1>
-          <p className="text-gray-400 text-sm font-medium italic">Last updated: February 25, 2026</p>
+          <p className="text-zinc-400 text-sm font-bold uppercase tracking-widest">Last updated: April 4, 2026</p>
         </div>
 
-        <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
-          <section className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">General disclaimer</h2>
+        <div className="space-y-12 text-zinc-600 leading-relaxed text-[15px]">
+          <section className="space-y-6">
+            <h2 className="text-2xl font-black text-zinc-900 uppercase tracking-tight">General Disclaimer</h2>
             <p>
-              The information provided by <strong>Appliance Rookies</strong> ("we," "us," or "our") on <a href="https://appliancerookies.shop/" className="text-orange-600 hover:underline">https://appliancerookies.shop/</a> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
-            </p>
-            <p className="font-bold text-gray-950 mt-4">
-              UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.
+              The information provided by <strong>All About Drivers</strong> ("we," "us," or "our") on <a href="http://allaboutdrivers.shop" className="text-blue-600 font-bold hover:underline">http://allaboutdrivers.shop</a> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">External links disclaimer</h2>
+          <section className="space-y-6">
+            <h2 className="text-2xl font-black text-zinc-900 uppercase tracking-tight">Professional Disclaimer</h2>
             <p>
-              The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.
-            </p>
-            <p>
-              WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.
+              The Site cannot and does not contain technical advice that guarantees specific hardware outcomes. The information is provided for general informational and educational purposes only and is not a substitute for professional technical consultation. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professional engineers or certified technicians.
             </p>
           </section>
 
-          <section className="bg-gray-50 p-8 rounded-3xl border border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">Professional disclaimer</h2>
+          <section className="space-y-6">
+            <h2 className="text-2xl font-black text-zinc-900 uppercase tracking-tight">External Links Disclaimer</h2>
             <p>
-              The Site cannot and does not contain appliance repair advice. The care information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals.
-            </p>
-            <p className="italic text-gray-600">
-              THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THE SITE IS SOLELY AT YOUR OWN RISK.
+              The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us. We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the site.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">Testimonials disclaimer</h2>
-            <p>
-              The Site may contain testimonials by users of our services. These testimonials reflect the real-life experiences and opinions of such users. However, the experiences are personal to those particular users, and may not necessarily be representative of all users of our services. We do not claim, and you should not assume, that all users will have the same experiences. YOUR INDIVIDUAL RESULTS MAY VARY.
+          <section className="p-10 bg-zinc-900 rounded-[2.5rem] text-white">
+            <h2 className="text-xl font-black uppercase mb-6 tracking-tight">Contact Information</h2>
+            <p className="text-zinc-400 mb-8 text-sm uppercase tracking-widest leading-loose">
+              If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at:
             </p>
-            <p>
-              The testimonials on the Site are submitted in various forms such as text, audio and/or video, and are reviewed by us before being posted. They appear on the Site verbatim as given by the users, except for the correction of grammar or typing errors. Some testimonials may have been shortened for the sake of brevity where the full testimonial contained extraneous information not relevant to the general public.
-            </p>
-            <p>
-              The views and opinions contained in the testimonials belong solely to the individual user and do not reflect our views and opinions. We are not affiliated with users who provide testimonials, and users are not paid or otherwise compensated for their testimonials.
-            </p>
-          </section>
-
-          <section className="pt-8 border-t border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-950 mb-4 tracking-tight">Contact us</h2>
-            <p>If you have any questions regarding this disclaimer, please contact us at:</p>
-            <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold text-gray-950">
-              Appliance Rookies<br />
-              2066 Fairview Ave, Prattville, AL 36066, USA<br />
-              United States<br />
-              Email: <a href="mailto:info@appliancerookies.shop" className="text-orange-600 hover:underline">info@appliancerookies.shop</a>
-            </address>
+            <a href="mailto:info@allaboutdrivers.shop" className="text-white text-lg font-black underline uppercase tracking-widest">
+              info@allaboutdrivers.shop
+            </a>
           </section>
         </div>
       </div>

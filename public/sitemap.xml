@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://appliancerookies.shop/</loc>
+    <loc>https://allaboutdrivers.shop/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://appliancerookies.shop/about</loc>
+    <loc>https://allaboutdrivers.shop/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://appliancerookies.shop/blog</loc>
+    <loc>https://allaboutdrivers.shop/blog</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://appliancerookies.shop/contact</loc>
+    <loc>https://allaboutdrivers.shop/contact</loc>
     <priority>0.8</priority>
   </url>
 
   <!-- Service Pages -->
-  <url><loc>https://appliancerookies.shop/service/washing-machine</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/refrigerator</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/dishwasher</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/television</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/coffee-maker</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/air-conditioner</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/microwave-oven</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/oven-stove</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/water-purifier</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/clothes-dryer</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/kitchen-chimney</loc><priority>0.7</priority></url>
-  <url><loc>https://appliancerookies.shop/service/other-appliances</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/washing-machine</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/refrigerator</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/dishwasher</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/television</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/coffee-maker</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/air-conditioner</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/microwave-oven</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/oven-stove</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/water-purifier</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/clothes-dryer</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/kitchen-chimney</loc><priority>0.7</priority></url>
+  <url><loc>https://allaboutdrivers.shop/service/other-appliances</loc><priority>0.7</priority></url>
 
   <!-- Policies -->
-  <url><loc>https://appliancerookies.shop/privacy-policy</loc><priority>0.3</priority></url>
-  <url><loc>https://appliancerookies.shop/terms-of-service</loc><priority>0.3</priority></url>
-  <url><loc>https://appliancerookies.shop/refund-policy</loc><priority>0.3</priority></url>
-  <url><loc>https://appliancerookies.shop/cookie-policy</loc><priority>0.3</priority></url>
-  <url><loc>https://appliancerookies.shop/disclaimer</loc><priority>0.3</priority></url>
+  <url><loc>https://allaboutdrivers.shop/privacy-policy</loc><priority>0.3</priority></url>
+  <url><loc>https://allaboutdrivers.shop/terms-of-service</loc><priority>0.3</priority></url>
+  <url><loc>https://allaboutdrivers.shop/refund-policy</loc><priority>0.3</priority></url>
+  <url><loc>https://allaboutdrivers.shop/cookie-policy</loc><priority>0.3</priority></url>
+  <url><loc>https://allaboutdrivers.shop/disclaimer</loc><priority>0.3</priority></url>
 </urlset>
 
 

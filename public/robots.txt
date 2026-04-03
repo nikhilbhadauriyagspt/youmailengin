@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://appliancerookies.shop/sitemap.xml
+Sitemap: https://allaboutdrivers.shop/sitemap.xml
 
 
