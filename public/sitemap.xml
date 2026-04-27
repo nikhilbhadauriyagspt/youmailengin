@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
   <url>
-    <loc>https://allaboutdrivers.shop/</loc>
+    <loc>https://yagamail.shop/</loc>
     <priority>1.0</priority>
-    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://allaboutdrivers.shop/about</loc>
+    <loc>https://yagamail.shop/guides</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://allaboutdrivers.shop/blog</loc>
+    <loc>https://yagamail.shop/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://allaboutdrivers.shop/contact</loc>
-    <priority>0.8</priority>
+    <loc>https://yagamail.shop/privacy</loc>
+    <priority>0.3</priority>
   </url>
-
-  
-
-  <!-- Policies -->
-  <url><loc>https://allaboutdrivers.shop/privacy-policy</loc><priority>0.3</priority></url>
-  <url><loc>https://allaboutdrivers.shop/terms-of-service</loc><priority>0.3</priority></url>
-  <url><loc>https://allaboutdrivers.shop/cookie-policy</loc><priority>0.3</priority></url>
-  <url><loc>https://allaboutdrivers.shop/disclaimer</loc><priority>0.3</priority></url>
+  <url>
+    <loc>https://yagamail.shop/terms</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
-
-

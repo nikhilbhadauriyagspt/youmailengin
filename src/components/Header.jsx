@@ -1,103 +1,89 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'About Us', path: '/#about' },
+    { name: 'All Guides', path: '/guides' },
+    { name: 'Services', path: '/#services' },
+    { name: 'How It Works', path: '/#how-it-works' },
+    { name: 'FAQ', path: '/#faq' },
   ];
 
-  const getLinkClass = (path) => {
-    const isActive = location.pathname === path;
-    return `relative py-1 text-[13px] font-bold  tracking-wide transition-colors duration-300 ${
-      isActive ? 'text-blue-600' : 'text-zinc-600 hover:text-blue-600'
-    }`;
-  };
-
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all  duration-300 ${
-      isScrolled ? 'bg-white py-4 border-b border-zinc-100' : 'bg-white/95 backdrop-blur-md py-6'
-    }`}>
-      <div className="max-w-[1820px] mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between">
-          
-          <Link to="/" className="flex items-center gap-4 group relative z-10">
-            <img 
-              src="/logo-rok.png" 
-              alt="All About Drivers" 
-              className="h-15 w-auto object-contain transition-transform duration-500 group-hover:scale-105" 
-            />
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-12 ml-auto mr-12 uppercase">
-            <nav className="flex items-center gap-10">
-              {navLinks.map((link) => (
-                <Link key={link.name} to={link.path} className={getLinkClass(link.path)}>
-                  {link.name}
-                  {location.pathname === link.path && (
-                    <span className="absolute -bottom-1 left-0 w-full  h-[2px] bg-blue-600 rounded-full"></span>
-                  )}
-                </Link>
-              ))}
-            </nav>
+    <header className="bg-white border-b border-zinc-100 sticky top-0 z-50 w-full font-sans">
+      <div className="max-w-[1800px] mx-auto px-6 lg:px-10">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo */}
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/" className="flex items-center">
+              <img src="/logo.avif" alt="Mail Yaga logo" className="h-10 w-auto object-contain" />
+            </Link>
           </div>
 
-          <div className="flex items-center gap-4 relative z-10">
-            <Link 
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex space-x-8 items-center">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                className="text-[14px] text-zinc-600 hover:text-blue-800 transition-colors font-medium"
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link
               to="/contact"
-              className="hidden md:block px-8 py-3 uppercase bg-blue-600 text-white text-[12px] font-bold  tracking-widest rounded-full transition-all duration-300 hover:bg-zinc-900"
+              className="bg-blue-800 text-white px-5 py-2 rounded-lg text-[13px] font-medium hover:bg-blue-700 transition-all active:scale-95"
             >
-              Get in Touch
+              Contact Us
             </Link>
-            
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full transition-all ${isMenuOpen ? 'bg-blue-600 text-white' : 'text-zinc-900 bg-zinc-100'}`}
-            >
-              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-zinc-600 p-2">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
             </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden fixed inset-0 h-screen bg-white transition-all duration-500 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'}`}>
-        <div className="pt-32 px-8 flex flex-col items-center gap-10 text-center">
+      {isMenuOpen && (
+        <div className="md:hidden bg-white border-t border-zinc-100 py-4 px-6 space-y-3 shadow-lg font-sans">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
-              to={link.path} 
-              onClick={() => setIsMenuOpen(false)} 
-              className="text-4xl font-black  text-zinc-900 hover:text-blue-600 transition-colors"
+            <Link
+              key={link.name}
+              to={link.path}
+              className="block text-[14px] text-zinc-700 py-2 font-medium"
+
+              onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
             </Link>
           ))}
-          <Link 
+          <Link
             to="/contact"
+            className="block w-full text-center bg-blue-800 text-white px-6 py-3 rounded-lg text-[13px]"
             onClick={() => setIsMenuOpen(false)}
-            className="w-full max-w-xs py-6 bg-blue-600 text-white font-bold text-center text-[14px]  rounded-full tracking-widest"
           >
-            Get in Touch
+            Contact Us
           </Link>
         </div>
-      </div>
+      )}
     </header>
   );
 };
 
 export default Header;
-
-

@@ -1,220 +1,110 @@
-import {
-  Mail,
-  MapPin,
-  ArrowUpRight,
-  ShieldCheck,
-  Sparkles,
-  CheckCircle2,
-  ArrowRight,
-} from 'lucide-react';
+import { Mail, ShieldCheck, ArrowRight, ExternalLink, MessageSquare, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (!email) return;
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setEmail('');
-      setTimeout(() => setIsSuccess(false), 5000);
-    }, 1000);
-  };
-
-  const footerLinks = {
-    company: [
-      { name: 'Home', path: '/' },
-      { name: 'About Us', path: '/about' },
-      { name: 'Blog', path: '/blog' },
-      { name: 'Contact', path: '/contact' },
-    ],
-    support: [
-      { name: 'Privacy Policy', path: '/privacy-policy' },
-      { name: 'Terms of Service', path: '/terms-of-service' },
-      { name: 'Disclaimer', path: '/disclaimer' },
-      { name: 'Cookie Policy', path: '/cookie-policy' },
-    ],
-  };
 
   return (
-    <footer className="bg-white pt-20 md:pt-24 pb-12 border-t border-zinc-100">
-      <div className="w-full px-6 md:px-12 lg:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 mb-20">
+    <footer className="bg-white text-zinc-700 pt-12 pb-12 border-t border-zinc-100 w-full font-sans">
+      <div className="max-w-[1800px] mx-auto px-6 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 lg:gap-12 mb-20">
+          
           {/* Brand Column */}
-          <div className="lg:col-span-4">
-            <Link to="/" className="inline-flex items-center gap-4 group mb-8">
-              <img
-                src="/logo-rok.png"
-                alt="All About Drivers"
-                className="h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
-              />
+          <div className="lg:col-span-5 space-y-8">
+            <Link to="/" className="inline-block">
+              <img src="/logo.avif" alt="Mail Yaga logo" className="h-12 w-auto object-contain" />
             </Link>
-
-            <p className="text-zinc-600 text-[15px] leading-8 max-w-sm mb-8">
-              A clear and approachable destination for understanding device drivers,
-              updates, compatibility, and connected hardware behavior.
+            <p className="text-[17px] leading-relaxed font-normal text-zinc-600 max-w-md">
+              Your reliable partner for resolving everyday email challenges. We specialize in account recovery and technical configuration to keep your digital communication seamless.
             </p>
-
-            <div className="space-y-4">
-              <div className="flex items-center gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-zinc-50 flex items-center justify-center text-blue-600 transition-all group-hover:bg-blue-600 group-hover:text-white">
-                  <Mail size={18} />
-                </div>
-                <a
-                  href="mailto:info@allaboutdrivers.shop"
-                  className="text-[15px] text-zinc-700 hover:text-blue-600 transition-colors"
-                >
-                  info@allaboutdrivers.shop
-                </a>
-              </div>
-
-              <div className="flex items-center gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-zinc-50 flex items-center justify-center text-blue-600 transition-all group-hover:bg-blue-600 group-hover:text-white">
-                  <MapPin size={18} />
-                </div>
-                <span className="text-[15px] text-zinc-700">
-                  130 S Fillmore St, Corinth, MS 38834, United States
-                </span>
-              </div>
-            </div>
+            
           </div>
 
-          {/* Links Grid */}
-          <div className="lg:col-span-3 grid grid-cols-2 gap-10">
-            <div>
-              <h4 className="text-[11px] font-bold text-blue-600 uppercase tracking-[0.22em] mb-6">
-                Navigation
-              </h4>
-
-              <ul className="space-y-4">
-                {footerLinks.company.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.path}
-                      className="text-zinc-500 hover:text-zinc-900 font-medium text-[14px] transition-all flex items-center gap-2 group"
-                    >
-                      {link.name}
-                      <ArrowUpRight
-                        size={14}
-                        className="opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
-                      />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-[11px] font-bold text-blue-600 uppercase tracking-[0.22em] mb-6">
-                Governance
-              </h4>
-
-              <ul className="space-y-4">
-                {footerLinks.support.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.path}
-                      className="text-zinc-500 hover:text-zinc-900 font-medium text-[14px] transition-all"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Quick Links */}
+          <div className="lg:col-span-3">
+            <h3 className="text-zinc-900 text-[15px] font-bold uppercase tracking-[0.2em] mb-10 relative inline-block">
+              Navigation
+              <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-blue-700"></span>
+            </h3>
+            <ul className="space-y-5">
+              {[
+                { name: 'Home', path: '/' },
+                { name: 'About Us', path: '/#about' },
+                { name: 'All Guides', path: '/guides' },
+                { name: 'Services', path: '/#services' },
+                { name: 'How It Works', path: '/#how-it-works' },
+                { name: 'FAQ', path: '/#faq' },
+                { name: 'Contact Us', path: '/contact' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link to={link.path} className="group flex items-center gap-3 hover:text-blue-700 transition-all text-[16px] font-medium text-zinc-600">
+                    <ArrowRight className="h-3.5 w-3.5 text-zinc-400 group-hover:text-blue-700 transition-colors" />
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Newsletter Column */}
-          <div className="lg:col-span-5">
-            <div className="bg-zinc-50 rounded-[2rem] p-6 md:p-12 border border-zinc-100">
-              <div className="flex flex-col gap-5">
-                <div className="flex items-center gap-2">
-                  <Sparkles size={18} className="text-blue-600" />
-                  <h3 className="text-zinc-900 text-[11px] font-bold uppercase tracking-[0.18em]">
-                    Tech Sync
-                  </h3>
-                </div>
-
-                <div className="grid lg:grid-cols-[1.1fr_1.4fr] gap-5 items-center">
-                  {/* Left Content */}
-                  <div>
-                    <p className="text-zinc-600 text-[14px] leading-7">
-                      Stay updated with simple driver tips, device insights, and useful
-                      tech awareness.
-                    </p>
-
-                    {isSuccess && (
-                      <p className="mt-3 text-[12px] font-medium text-blue-600 flex items-center gap-2">
-                        <CheckCircle2 size={14} />
-                        Subscription Active
-                      </p>
-                    )}
+          {/* Contact Column */}
+          <div className="lg:col-span-4 lg:pl-10">
+            <h4 className="text-zinc-900 text-[15px] font-bold uppercase tracking-[0.2em] mb-10 relative inline-block">
+              Get Support
+              <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-blue-700"></span>
+            </h4>
+            <div className="space-y-8">
+              <p className="text-[16px] text-zinc-600 leading-relaxed">Need immediate assistance? Our experts are standing by to help you resolve any issue.</p>
+              
+              <div className="space-y-5">
+                <a href="mailto:info@mailyaga.shop" className="flex items-center gap-5 p-5 rounded-3xl bg-zinc-50 border border-zinc-100 hover:border-blue-200 hover:bg-white hover:shadow-xl transition-all group">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center text-blue-700 group-hover:scale-110 transition-transform shadow-sm">
+                    <Mail className="h-6 w-6" />
                   </div>
+                  <div>
+                    <p className="text-[11px] uppercase tracking-widest font-bold text-zinc-500 mb-0.5">Email Assistance</p>
+                    <p className="text-zinc-900 font-bold text-[16px]">info@mailyaga.shop</p>
+                  </div>
+                </a>
 
-                  {/* Right Form */}
-                  <form
-                    onSubmit={handleSubscribe}
-                    className="flex flex-col sm:flex-row gap-3 sm:items-center"
-                  >
-                    <input
-                      required
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      className="flex-1 bg-white border border-zinc-200 rounded-2xl px-5 py-4 text-zinc-900 text-[14px] font-medium outline-none focus:border-blue-600 transition-all placeholder:text-zinc-400"
-                    />
-
-                    <button
-                      disabled={isSubmitting}
-                      className="shrink-0 bg-zinc-900 hover:bg-blue-600 text-white px-6 py-4 rounded-2xl font-medium text-[14px] transition-all cursor-pointer disabled:opacity-50 flex items-center justify-center gap-2 group/btn shadow-lg shadow-black/5"
-                    >
-                      {isSubmitting ? (
-                        '...'
-                      ) : (
-                        <>
-                          Join Network
-                          <ArrowRight
-                            size={10}
-                            className="group-hover/btn:translate-x-1 transition-transform"
-                          />
-                        </>
-                      )}
-                    </button>
-                  </form>
-                </div>
+                <Link to="/contact" className="flex items-center justify-center gap-3 bg-blue-700 hover:bg-zinc-900 text-white w-full py-5 rounded-3xl text-[16px] font-bold transition-all shadow-lg shadow-blue-200 hover:shadow-none">
+                  <MessageSquare className="h-5 w-5" />
+                  Request Support Form
+                </Link>
               </div>
             </div>
           </div>
+
         </div>
 
-        {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-zinc-100 gap-6">
-          <div className="flex items-center gap-3">
-            <ShieldCheck size={18} className="text-blue-600" />
-            <span className="text-[14px] font-medium text-zinc-700">SSL Secured</span>
-          </div>
-
-          <div className="text-center md:text-right">
-            <p className="text-zinc-400 text-[13px] font-medium">
-              &copy; {currentYear} All About Drivers. Precision Architecture.
-            </p>
+        {/* Middle Bar: Policies */}
+        <div className="py-10 border-y border-zinc-100">
+          <div className="flex flex-wrap justify-center md:justify-start gap-x-12 gap-y-4 text-[14px]">
+            {[
+              { name: 'Privacy Policy', path: '/privacy-policy' },
+              { name: 'Terms of Service', path: '/terms-of-service' },
+              { name: 'Cookie Policy', path: '/cookie-policy' },
+              { name: 'Return Policy', path: '/refund-policy' },
+              { name: 'Disclaimer', path: '/disclaimer' }
+            ].map((policy) => (
+              <Link key={policy.name} to={policy.path} className="text-zinc-600 hover:text-blue-700 font-semibold transition-colors">
+                {policy.name}
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Final Disclaimer */}
-        <div className="mt-12 pt-8 border-t border-zinc-50 text-center">
-          <p className="text-zinc-400 text-[11px] font-bold uppercase tracking-widest leading-loose">
-            Disclaimer - For Informational only. No software installation or distribution.
+        {/* Final Copyright */}
+        <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-zinc-600 text-[13px] font-medium">
+            © {currentYear} Mail Yaga. All rights reserved.
           </p>
+          <div className="flex items-center gap-2 text-zinc-500 text-[11px] font-bold uppercase tracking-widest">
+            <span>Secure</span>
+            <div className="w-1 h-1 rounded-full bg-zinc-400"></div>
+            <span>Encrypted</span>
+            <div className="w-1 h-1 rounded-full bg-zinc-400"></div>
+            <span>Certified</span>
+          </div>
         </div>
       </div>
     </footer>

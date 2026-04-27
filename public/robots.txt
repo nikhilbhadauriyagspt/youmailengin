@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://allaboutdrivers.shop/sitemap.xml
+Sitemap: https://yagamail.shop/sitemap.xml
 
 
