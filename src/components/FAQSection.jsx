@@ -5,24 +5,24 @@ import { Link } from 'react-router-dom';
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Is Mail Yaga an official email provider support?",
-      answer: "No, Mail Yaga is an independent technical support provider. We are not affiliated with, endorsed by, or partnered with any email service providers like Gmail, Outlook, or Yahoo. We provide expert technical assistance for users who need help navigating these platforms."
+      question: "Is Yagamail an official email provider?",
+      answer: "No, Yagamail is an independent educational resource. We are not affiliated with, endorsed by, or partnered with any email service providers like Gmail, Outlook, or Yahoo. We provide informative guides for users who want to learn how to navigate these platforms more effectively."
     },
     {
-      question: "How long does it take to resolve an issue?",
-      answer: "Most common email issues like synchronization errors or configuration problems are resolved within 24-48 hours of submitting your request. Complex recovery cases may take longer depending on the specific security protocols of your provider."
+      question: "What kind of information do your guides cover?",
+      answer: "Our guides cover a wide range of topics, including account setup, security best practices, troubleshooting common synchronization errors, and optimizing email productivity across different devices."
     },
     {
-      question: "Do you offer a refund if the issue isn't fixed?",
-      answer: "Yes, we have a clear Return Policy. If our technical team is unable to provide the service you paid for, or if there's a technical error in billing, you are eligible for a refund. Please refer to our Return Policy page for full details."
+      question: "Are the guides free to access?",
+      answer: "Yes, our primary educational guides and articles are free to browse. We aim to provide accessible information to help everyone manage their digital communication securely and efficiently."
     },
     {
-      question: "Is my personal data safe with your team?",
-      answer: "Absolutely. We follow strict security best practices and never ask for your passwords directly. We guide you through the process securely, ensuring your personal information and privacy are protected at every step."
+      question: "How often is the knowledge base updated?",
+      answer: "We strive to update our guides regularly to reflect changes in email provider interfaces and new security recommendations, ensuring you have access to current and relevant information."
     },
     {
-      question: "Which email providers do you support?",
-      answer: "We provide technical assistance for all major email platforms, including Gmail, Outlook, Yahoo Mail, AOL, iCloud, and custom IMAP/SMTP corporate email configurations."
+      question: "Which email platforms do your guides cover?",
+      answer: "Our resources cover all major email platforms, including Gmail, Outlook, Yahoo Mail, AOL, iCloud, and general IMAP/SMTP configurations."
     }
   ];
 

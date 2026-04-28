@@ -7,40 +7,20 @@ const RefundPolicy = () => {
 
         <div className="space-y-12 text-[17px] leading-relaxed text-zinc-700">
           <p>
-            Thank you for your purchase. We hope you are happy with your purchase. However, if you are not completely satisfied with your purchase for any reason, you may return it to us for a refund only. Please see below for more information on our return policy.
+            Thank you for using Yagamail. We hope you find our educational resources helpful. However, if you are not completely satisfied with a service for any reason, you may contact us for a refund. Please see below for more information on our return policy.
           </p>
-
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-zinc-900 uppercase">RETURNS</h2>
-            <p>
-              All returns must be postmarked within seven (7) days of the purchase date. All returned items must be in new and unused condition, with all original tags and labels attached.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-zinc-900 uppercase">RETURN PROCESS</h2>
-            <p>
-              To return an item, please email customer service at <span className="text-blue-800 font-medium">info@mailyaga.shop</span> to obtain an Return Merchandise Authorization (RMA) number. After receiving an RMA number, place the item securely in its original packaging and include your proof of purchase, then mail your return to the following address:
-            </p>
-            <div className="bg-zinc-50 p-6 rounded-xl border border-zinc-100 font-medium text-zinc-800">
-              <p>Mail Yaga</p>
-              <p>Attn: Returns</p>
-              <p>RMA #</p>
-            </div>
-            <p>Return shipping charges will be paid or reimbursed by us.</p>
-          </div>
 
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-zinc-900 uppercase">REFUNDS</h2>
             <p>
-              After receiving your return and inspecting the condition of your item, we will process your return. Please allow at least seven (7) days from the receipt of your item to process your return. Refunds may take 1-2 billing cycles to appear on your credit card statement, depending on your credit card company. We will notify you by email when your return has been processed.
+              All refund requests must be made within seven (7) days of the purchase or service date. We strive for 100% satisfaction with our educational content and guidance.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-zinc-900 uppercase">EXCEPTIONS</h2>
+            <h2 className="text-2xl font-semibold text-zinc-900 uppercase">REFUND PROCESS</h2>
             <p>
-              For defective or damaged products, please contact us at the contact details below to arrange a refund or exchange.
+              To request a refund, please email customer service at <span className="text-blue-800 font-medium">info@yagamail.shop</span> with your proof of purchase and reason for the request.
             </p>
           </div>
 
@@ -50,8 +30,7 @@ const RefundPolicy = () => {
               If you have any questions concerning our return policy, please contact us at:
             </p>
             <div className="font-bold text-zinc-900">
-              <p>+1-402-508-9991</p>
-              <p>info@mailyaga.shop</p>
+              <p>info@yagamail.shop</p>
             </div>
           </div>
         </div>

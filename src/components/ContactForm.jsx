@@ -49,10 +49,10 @@ const ContactForm = () => {
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-            Ready to get your <span className="text-blue-800">Email fixed?</span>
+            Start Your <span className="text-blue-800">Email Mastery.</span>
           </h2>
           <p className="text-zinc-600 text-[18px] max-w-2xl mx-auto leading-relaxed">
-            Just fill out the simple form below. Our team will read your message and get back to you with a solution that works.
+            Have a question about one of our guides? Just fill out the simple form below. We'll provide the information you need to move forward.
           </p>
         </div>
 
@@ -69,13 +69,13 @@ const ContactForm = () => {
               <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 flex-shrink-0">
                 <User className="w-5 h-5" />
               </div>
-              <p className="text-[17px] font-medium">Talk to a real person, no bots</p>
+              <p className="text-[17px] font-medium">Clear, expert-led information</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 flex-shrink-0">
                 <CheckCircle className="w-5 h-5" />
               </div>
-              <p className="text-[17px] font-medium">Fast help that actually lasts</p>
+              <p className="text-[17px] font-medium">Accurate and up-to-date guides</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 flex-shrink-0">
@@ -87,7 +87,7 @@ const ContactForm = () => {
               <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-800 flex-shrink-0">
                 <Globe className="w-5 h-5" />
               </div>
-              <p className="text-[17px] font-medium">Works with all email providers</p>
+              <p className="text-[17px] font-medium">Resources for all email platforms</p>
             </div>
           </div>
 
@@ -98,13 +98,13 @@ const ContactForm = () => {
                 <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
                   <CheckCircle className="w-10 h-10" />
                 </div>
-                <h3 className="text-2xl font-bold text-zinc-900">Request Sent Successfully!</h3>
-                <p className="text-zinc-600">Thank you for reaching out. One of our experts will contact you shortly at your provided email address.</p>
+                <h3 className="text-2xl font-bold text-zinc-900">Inquiry Sent Successfully!</h3>
+                <p className="text-zinc-600">Thank you for reaching out. We will provide the information requested shortly at your provided email address.</p>
                 <button 
                   onClick={() => setStatus({ ...status, success: false })}
                   className="bg-blue-800 text-white px-8 py-3 rounded-xl font-bold hover:bg-zinc-900 transition-all"
                 >
-                  Send Another Request
+                  Send Another Inquiry
                 </button>
               </div>
             ) : (
@@ -139,7 +139,7 @@ const ContactForm = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="issue" className="text-[14px] font-semibold text-zinc-700 ml-1">What's the problem?</label>
+                  <label htmlFor="issue" className="text-[14px] font-semibold text-zinc-700 ml-1">Topic of Inquiry</label>
                   <select 
                     id="issue"
                     name="issue"
@@ -147,16 +147,16 @@ const ContactForm = () => {
                     onChange={handleChange}
                     className="w-full bg-zinc-50 px-5 py-4 rounded-xl border border-zinc-100 focus:bg-white focus:border-blue-500 outline-none transition-all appearance-none cursor-pointer"
                   >
-                    <option>Can't log in / Password reset</option>
-                    <option>Emails not sending or receiving</option>
-                    <option>Syncing across devices</option>
-                    <option>Security / Hacked account</option>
-                    <option>Other / Not sure</option>
+                    <option>Account Setup Guides</option>
+                    <option>Security Best Practices</option>
+                    <option>Syncing Across Devices</option>
+                    <option>Troubleshooting Information</option>
+                    <option>Other Educational Resource</option>
                   </select>
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-[14px] font-semibold text-zinc-700 ml-1">Tell us more</label>
+                  <label htmlFor="message" className="text-[14px] font-semibold text-zinc-700 ml-1">Your Question</label>
                   <textarea 
                     id="message"
                     name="message"
@@ -164,7 +164,7 @@ const ContactForm = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="4" 
-                    placeholder="Briefly describe what's happening..." 
+                    placeholder="Tell us what you'd like to learn more about..." 
                     className="w-full bg-zinc-50 px-5 py-4 rounded-xl border border-zinc-100 focus:bg-white focus:border-blue-500 outline-none transition-all resize-none"
                   ></textarea>
                 </div>
@@ -188,7 +188,7 @@ const ContactForm = () => {
                   ) : (
                     <>
                       <Send className="w-5 h-5" />
-                      Send Help Request
+                      Send Inquiry
                     </>
                   )}
                 </button>

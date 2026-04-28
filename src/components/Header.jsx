@@ -10,7 +10,7 @@ const Header = () => {
     { name: 'About Us', path: '/#about' },
     { name: 'All Guides', path: '/guides' },
     { name: 'Services', path: '/#services' },
-    { name: 'How It Works', path: '/#how-it-works' },
+    { name: 'How to Learn', path: '/#how-it-works' },
     { name: 'FAQ', path: '/#faq' },
   ];
 
@@ -21,7 +21,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="/logo.avif" alt="Mail Yaga logo" className="h-10 w-auto object-contain" />
+              <img src="/logo.avif" alt="Yagamail logo" className="h-10 w-auto object-contain" />
             </Link>
           </div>
 

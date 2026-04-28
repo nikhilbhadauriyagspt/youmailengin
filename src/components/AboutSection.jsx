@@ -26,10 +26,10 @@ const AboutSection = () => {
             <div className="space-y-4">
               <p className="text-blue-800 font-semibold tracking-[0.2em] uppercase text-[12px]">Our Core Mission</p>
               <h2 className="text-3xl md:text-5xl font-semibold leading-tight tracking-tight">
-                Dedicated to <span className="text-blue-800">Technical Excellence.</span>
+                Dedicated to <span className="text-blue-800">Email Knowledge.</span>
               </h2>
               <p className="text-[17px] text-zinc-600 leading-relaxed font-normal max-w-xl">
-                At Mail Yaga, we approach every email challenge with the same rigor as industrial maintenance. We focus on restoring your digital confidence through diagnostic clarity and effective technical resolution.
+                At Yagamail, we believe in empowering users through clear, actionable information. Our mission is to provide comprehensive guides that help you navigate the complexities of digital communication with confidence.
               </p>
             </div>
 
@@ -38,9 +38,9 @@ const AboutSection = () => {
                 <div className="w-10 h-10 bg-blue-50 text-blue-800 rounded-xl flex items-center justify-center mb-4">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
-                <h3 className="text-[18px] font-bold text-zinc-900 mb-2 tracking-tight">Secure Support</h3>
+                <h3 className="text-[18px] font-bold text-zinc-900 mb-2 tracking-tight">Security Guides</h3>
                 <p className="text-[15px] text-zinc-600 leading-relaxed">
-                  Strict security protocols ensure your data remains protected.
+                  Learn the best practices to keep your personal information safe.
                 </p>
               </div>
 
@@ -48,9 +48,9 @@ const AboutSection = () => {
                 <div className="w-10 h-10 bg-green-50 text-green-700 rounded-xl flex items-center justify-center mb-4">
                   <Target className="w-5 h-5" />
                 </div>
-                <h3 className="text-[18px] font-bold text-zinc-900 mb-2 tracking-tight">Accurate Fixes</h3>
+                <h3 className="text-[18px] font-bold text-zinc-900 mb-2 tracking-tight">Step-by-Step Tutorials</h3>
                 <p className="text-[15px] text-zinc-600 leading-relaxed">
-                  Deep technical knowledge to identify root causes instantly.
+                  Easy-to-follow instructions for all major email configurations.
                 </p>
               </div>
             </div>

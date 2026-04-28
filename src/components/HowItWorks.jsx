@@ -5,22 +5,22 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: <MessageSquare />,
-      title: 'Submit Your Request',
-      description: 'Briefly describe your email issue through our secure contact form.',
+      title: 'Explore Guides',
+      description: 'Browse our extensive library of email tutorials and knowledge articles.',
       color: 'text-blue-700',
       bg: 'bg-blue-50'
     },
     {
       icon: <Settings />,
-      title: 'Technical Diagnosis',
-      description: 'Our experts analyze your issue and identify the exact technical cause.',
+      title: 'Follow Tutorials',
+      description: 'Find the step-by-step guide that matches your specific email question.',
       color: 'text-indigo-700',
       bg: 'bg-indigo-50'
     },
     {
       icon: <CheckCircle2 />,
-      title: 'Effective Solution',
-      description: 'We walk you through the fix or resolve it directly for lasting results.',
+      title: 'Master Your Email',
+      description: 'Apply the simple steps to optimize your account and improve security.',
       color: 'text-green-700',
       bg: 'bg-green-50'
     }
@@ -32,10 +32,10 @@ const HowItWorks = () => {
         <div className="text-center mb-20">
           <p className="text-blue-800 font-semibold tracking-[0.2em] uppercase text-[12px] mb-4">Our Process</p>
           <h2 className="text-3xl md:text-5xl font-semibold text-zinc-900 mb-6 tracking-tight">
-            How It <span className="text-blue-800">Works.</span>
+            How to <span className="text-blue-800">Learn.</span>
           </h2>
           <p className="text-zinc-600 max-w-2xl mx-auto text-[18px] font-normal leading-relaxed">
-            We’ve simplified technical support into three clear, effective steps to get your email fixed fast.
+            We’ve organized our email knowledge into easy steps to help you master your digital communication.
           </p>
         </div>
 

@@ -11,12 +11,12 @@ const ServicesSection = () => {
     <section id="services" className="py-24 bg-white w-full">
       <div className="max-w-[1800px] mx-auto px-6 lg:px-10">
         <div className="text-center mb-20">
-          <p className="text-blue-800 font-semibold tracking-[0.2em] uppercase text-[12px] mb-4">What We Offer</p>
+          <p className="text-blue-800 font-semibold tracking-[0.2em] uppercase text-[12px] mb-4">Our Resources</p>
           <h2 className="text-3xl md:text-5xl font-semibold text-zinc-900 mb-6 tracking-tight">
-            How We Can <span className="text-blue-800">Help You.</span>
+            Comprehensive <span className="text-blue-800">Email Guides.</span>
           </h2>
           <p className="text-zinc-600 max-w-2xl mx-auto text-[17px] font-normal leading-relaxed">
-            From setup to security, our experts are here to make your email work just the way it should.
+            From initial setup to advanced security, our tutorials are designed to help you master your email tools.
           </p>
         </div>
 
