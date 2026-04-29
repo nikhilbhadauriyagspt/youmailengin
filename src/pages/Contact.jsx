@@ -19,12 +19,12 @@ const Contact = () => {
             <span className="text-zinc-900">Contact</span>
           </div>
           <div className="max-w-3xl">
-            <p className="text-blue-600 font-bold tracking-[0.15em] uppercase text-[12px] mb-4">Contact Us</p>
+            
             <h1 className="text-3xl md:text-5xl font-medium text-zinc-900 mb-6 leading-tight">
-              Request <span className="text-blue-700">Technical Assistance.</span>
+              Contact <span className="text-blue-700">Us</span>
             </h1>
             <p className="text-zinc-500 text-lg md:text-[19px] leading-relaxed">
-              Have a specific question or need personalized guidance? Our support team is here to assist you with any email-related inquiries.
+             We will guide you
             </p>
           </div>
         </div>

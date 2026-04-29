@@ -6,7 +6,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Is MailBaba an official email provider?",
-      answer: "No, MailBaba is an independent educational resource. We are not affiliated with, endorsed by, or partnered with any email service providers like Gmail, Outlook, or Yahoo. We provide informative guides for users who want to learn how to navigate these platforms more effectively."
+      answer: "No, MailBaba is an independent educational resource. We are not affiliated with, endorsed by, or partnered with any email service providers. We provide informative guides for users who want to learn how to navigate these platforms more effectively."
     },
     {
       question: "What kind of information do your guides cover?",
@@ -20,10 +20,7 @@ const FAQSection = () => {
       question: "How often is the knowledge base updated?",
       answer: "We strive to update our guides regularly to reflect changes in email provider interfaces and new security recommendations, ensuring you have access to current and relevant information."
     },
-    {
-      question: "Which email platforms do your guides cover?",
-      answer: "Our resources cover all major email platforms, including Gmail, Outlook, Yahoo Mail, AOL, iCloud, and general IMAP/SMTP configurations."
-    }
+   
   ];
 
   const [openIndex, setOpenIndex] = useState(0);
@@ -93,8 +90,8 @@ const FAQSection = () => {
           <div className="bg-zinc-900 rounded-[3rem] p-12 relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-800/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl transition-transform duration-700 group-hover:scale-150" />
             <div className="relative z-10 space-y-6">
-              <h3 className="text-3xl font-bold text-white">Still have questions?</h3>
-              <p className="text-zinc-400 text-lg">Our support team is available to assist with any specific queries you might have.</p>
+              <h3 className="text-2xl font-bold text-white">Still have questions?</h3>
+              <p className="text-zinc-400 text-lg">We will guide you.</p>
               <Link to="/contact" className="inline-flex items-center gap-3 bg-white text-zinc-900 px-10 py-5 rounded-2xl font-bold hover:bg-blue-50 transition-all shadow-2xl hover:scale-105 active:scale-95">
                 <MessageCircle className="w-5 h-5" />
                 Contact Us

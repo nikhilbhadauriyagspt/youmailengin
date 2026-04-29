@@ -132,7 +132,7 @@ const GuideDetail = () => {
               <div className="sticky top-32 space-y-8">
                 {/* Need Support CTA */}
                 <div className="bg-white border border-zinc-100 rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl hover:shadow-zinc-200/40 transition-all duration-500">
-                  <h3 className="text-xl font-bold text-zinc-900 mb-4">Need personalized assistance?</h3>
+                  <h3 className="text-xl font-bold text-zinc-900 mb-4">To Learn More</h3>
                   <p className="text-zinc-500 mb-8 leading-relaxed text-[15px]">
                     If these steps didn't resolve your issue, our support team is available to provide one-on-one guidance to assist you through the process.
                   </p>

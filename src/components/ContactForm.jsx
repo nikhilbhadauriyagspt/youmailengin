@@ -50,15 +50,8 @@ const ContactForm = () => {
         <div className="grid lg:grid-cols-12 gap-16 items-start">
           
           {/* Left Side: Support Info */}
-          <div className="lg:col-span-5 xl:col-span-4 space-y-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-6 leading-tight">
-                Connect with our <span className="text-blue-700">Support Team.</span>
-              </h2>
-              <p className="text-zinc-500 text-lg leading-relaxed mb-10">
-                Prefer direct communication? Reach out to us via email and we'll assist you with your technical inquiries.
-              </p>
-            </div>
+          <div className="lg:col-span-5 xl:col-span-4 ">
+           
 
             <a 
               href="mailto:info@mailbaba.co"
