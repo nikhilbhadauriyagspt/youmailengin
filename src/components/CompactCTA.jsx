@@ -15,8 +15,10 @@ const CompactCTA = () => {
             <div className="flex items-center gap-10">
               <div className="hidden sm:flex w-44 h-44 bg-white/5 rounded-[2.5rem] items-center justify-center flex-shrink-0 backdrop-blur-sm border border-white/10 relative overflow-hidden group">
                 <img
-                  src="/newsletter.png"
+                  src="/newsletter.avif"
                   alt="Newsletter"
+                  width="144"
+                  height="144"
                   className="w-36 h-36 object-contain transition-all duration-700 group-hover:scale-110 group-hover:-rotate-3 z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

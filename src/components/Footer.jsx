@@ -87,6 +87,8 @@ const Footer = () => {
             <img
               src="/newsletter.avif"
               alt="newsletter"
+              width="320"
+              height="320"
               className="w-[220px] sm:w-[260px] lg:w-[320px] h-auto object-contain"
             />
           </div>
@@ -111,7 +113,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14">
             <div>
               <button onClick={() => handleNavClick('/')} className="inline-block mb-5 cursor-pointer">
-                <img src="/logo.avif" alt="MailBaba logo" className="h-15 w-auto object-contain" />
+                <img src="/logo.avif" alt="MailBaba logo" width="160" height="40" className="h-15 w-auto object-contain" />
               </button>
 
               <p className="text-slate-600 text-[15px] leading-7 max-w-sm">
