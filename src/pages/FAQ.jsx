@@ -11,7 +11,7 @@ const FAQ = () => {
     {
       category: "General",
       question: "Is YouMailEngine an official email provider?",
-      answer: "No. YouMailEngine is an independent educational platform. We are not affiliated with Google, Microsoft, Yahoo, or any other email service provider. Our mission is strictly to provide clear, actionable information about how to use these services effectively."
+      answer: "No. YouMailEngine is an independent educational platform. We are not affiliated with email service provider. Our mission is strictly to provide clear, actionable information about how to use these services effectively."
     },
     {
       category: "Learning",
