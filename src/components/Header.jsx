@@ -63,6 +63,8 @@ const Header = () => {
             <img
               src="/logo.avif"
               alt="YouMailEngine logo"
+              width="200"
+              height="70"
               className="h-17 w-auto object-contain"
             />
           </button>

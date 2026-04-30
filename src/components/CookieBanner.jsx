@@ -31,7 +31,7 @@ const CookieBanner = () => {
           </div>
           <div className="space-y-1">
             <p className="text-zinc-900 text-sm font-bold uppercase tracking-wider">Cookie Notice</p>
-            <p className="text-zinc-500 text-[14px] leading-relaxed max-w-4xl">
+            <p className="text-zinc-700 text-[14px] leading-relaxed max-w-4xl">
               We use cookies to improve your experience. By using our site, you agree to our use of cookies as described in our 
               <Link to="/cookie-policy" className="text-zinc-900 font-bold ml-1 hover:underline">Cookie Policy</Link>.
             </p>
@@ -41,7 +41,7 @@ const CookieBanner = () => {
         <div className="flex items-center gap-2 w-full md:w-auto">
           <button 
             onClick={() => setIsVisible(false)}
-            className="flex-1 md:flex-none px-6 py-3 text-zinc-400 hover:text-zinc-900 text-[12px] font-bold uppercase tracking-widest border border-zinc-100 transition-colors"
+            className="flex-1 md:flex-none px-6 py-3 text-zinc-600 hover:text-zinc-900 text-[12px] font-bold uppercase tracking-widest border border-zinc-200 transition-colors"
           >
             Decline
           </button>

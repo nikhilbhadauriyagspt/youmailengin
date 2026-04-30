@@ -101,6 +101,8 @@ const Footer = () => {
                 <img
                   src="/logo.avif"
                   alt="YouMailEngine"
+                  width="200"
+                  height="72"
                   className="h-18 w-auto object-contain"
                 />
               </button>
