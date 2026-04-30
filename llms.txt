@@ -1,0 +1,25 @@
+# You Mail Engine
+
+You Mail Engine is an educational platform providing simple, jargon-free email guides and tutorials.
+
+## Core Purpose
+- **Educational Email Guides**: Simplified articles explaining email basics, settings, and inbox features.
+- **Privacy Awareness**: Information on safe email habits, account protection, and spam awareness.
+- **Digital Literacy**: Practical learning for everyday users to master digital communication.
+
+## Key Features
+- **Beginner-Friendly**: Content written for non-technical users.
+- **Privacy-Focused**: Dedicated sections for security tips and safe email practices.
+- **Comprehensive FAQ**: Answers to common email-related questions.
+
+## Tech Stack
+- **Frontend**: React, Vite, Tailwind CSS.
+- **Routing**: React Router DOM.
+- **Icons**: Lucide React.
+- **SEO**: React Helmet Async.
+
+## Directory Structure
+- `/src/components`: UI components (Hero, FAQ, Security tips, etc.)
+- `/src/pages`: Main application pages (Home, About, Guides, FAQ, etc.)
+- `/src/policies`: Legal and privacy policy pages.
+- `/public`: Static assets and SEO-related files (robots.txt, sitemap.xml).

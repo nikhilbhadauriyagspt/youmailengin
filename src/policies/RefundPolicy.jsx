@@ -1,13 +1,19 @@
+import SEO from "../components/SEO";
+
 const RefundPolicy = () => {
   return (
     <section className="py-24 bg-white font-sans text-zinc-900 min-h-screen">
+      <SEO 
+        title="Refund Policy" 
+        description="Review the refund policy for You Mail Engine. As an educational resource, we clarify our stance on payments and refunds."
+      />
       <div className="max-w-[1000px] mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-semibold mb-8 text-blue-800">Return Policy</h1>
         <p className="text-zinc-600 mb-12 border-b border-zinc-100 pb-8 uppercase font-bold tracking-widest">Last updated April 28, 2026</p>
 
         <div className="space-y-12 text-[17px] leading-relaxed text-zinc-700">
           <p>
-            Thank you for using YouMailEngine. We hope you find our educational resources helpful. However, if you are not completely satisfied with a service for any reason, you may contact us for a refund. Please see below for more information on our return policy.
+            Thank you for using You Mail Engine. We hope you find our educational resources helpful. However, if you are not completely satisfied with a service for any reason, you may contact us for a refund. Please see below for more information on our return policy.
           </p>
 
           <div className="space-y-4">

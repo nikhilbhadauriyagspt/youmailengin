@@ -36,7 +36,7 @@ const Contact = () => {
     <div className="bg-zinc-50 min-h-screen">
       <SEO 
         title="Contact Us" 
-        description="Get in touch with YouMailEngine for email guide suggestions, feedback, or any questions you have about our platform."
+        description="Get in touch with You Mail Engine for email guide suggestions, feedback, or any questions you have about our platform."
       />
       {/* Header */}
       <section className="bg-white pt-32 pb-20 border-b border-zinc-100 relative overflow-hidden">

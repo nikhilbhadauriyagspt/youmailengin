@@ -1,6 +1,12 @@
+import SEO from "../components/SEO";
+
 const Disclaimer = () => {
   return (
     <section className="py-24 bg-white font-sans text-zinc-900 min-h-screen">
+      <SEO 
+        title="Disclaimer" 
+        description="Read the legal disclaimer for You Mail Engine. Understand the educational nature of our content and our limitations of liability."
+      />
       <div className="max-w-[1000px] mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-semibold mb-8 text-blue-800">Disclaimer</h1>
         <p className="text-zinc-600 mb-12 border-b border-zinc-100 pb-8 uppercase font-bold tracking-widest">Last updated: April 28, 2026</p>
@@ -9,7 +15,7 @@ const Disclaimer = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-zinc-900 uppercase">General Disclaimer</h2>
             <p>
-              The information provided by <strong>YouMailEngine</strong> ("we," "us," or "our") on <a href="https://youmailengine.com" className="text-blue-800 underline">https://youmailengine.com</a> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site.
+              The information provided by <strong>You Mail Engine</strong> ("we," "us," or "our") on <a href="https://youmailengine.com" className="text-blue-800 underline">https://youmailengine.com</a> (the "Site") is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site.
             </p>
           </div>
 

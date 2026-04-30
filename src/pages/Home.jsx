@@ -27,7 +27,7 @@ const Home = () => {
     <>
       <SEO 
         title="Home" 
-        description="YouMailEngine provides simple, jargon-free email guides to help you master your inbox, secure your privacy, and understand digital communication."
+        description="You Mail Engine provides simple, jargon-free email guides to help you master your inbox, secure your privacy, and understand digital communication."
       />
       <div id="home"><Hero /></div>
       <div id="about"><AboutSection /></div>

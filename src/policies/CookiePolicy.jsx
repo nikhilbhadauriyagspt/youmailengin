@@ -1,13 +1,19 @@
+import SEO from "../components/SEO";
+
 const CookiePolicy = () => {
   return (
     <section className="py-24 bg-white font-sans text-zinc-900 min-h-screen">
+      <SEO 
+        title="Cookie Policy" 
+        description="Understand how You Mail Engine uses cookies and similar technologies to improve your experience and analyze site traffic."
+      />
       <div className="max-w-[1000px] mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-semibold mb-8 text-blue-800">Cookie Policy</h1>
         <p className="text-zinc-600 mb-12 border-b border-zinc-100 pb-8 uppercase font-bold tracking-widest">Last Updated: April 28, 2026</p>
 
         <div className="space-y-12 text-[17px] leading-relaxed text-zinc-700">
           <p>
-            This Cookie Policy explains how YouMailEngine (“Company,” “we,” “us,” or “our”) uses cookies and similar tracking technologies when you visit our website <a href="http://youmailengine.com/" className="text-blue-800 underline">http://youmailengine.com/</a> (the “Website”). This policy should be read together with our <strong>PRIVACY POLICY</strong> and <strong>TERMS OF SERVICE</strong>.
+            This Cookie Policy explains how You Mail Engine (“Company,” “we,” “us,” or “our”) uses cookies and similar tracking technologies when you visit our website <a href="http://youmailengine.com/" className="text-blue-800 underline">http://youmailengine.com/</a> (the “Website”). This policy should be read together with our <strong>PRIVACY POLICY</strong> and <strong>TERMS OF SERVICE</strong>.
           </p>
 
           <div className="space-y-4">
@@ -20,7 +26,7 @@ const CookiePolicy = () => {
 
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-zinc-900">2. How We Use Cookies</h2>
-            <p>YouMailEngine uses cookies and similar technologies to:</p>
+            <p>You Mail Engine uses cookies and similar technologies to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Ensure the Website functions properly</li>
               <li>Maintain security and prevent fraudulent activity</li>
@@ -68,7 +74,7 @@ const CookiePolicy = () => {
 
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-zinc-900">6. Do Not Track Signals</h2>
-            <p>Some browsers offer a “Do Not Track” (DNT) feature. At this time, there is no uniform industry standard for recognizing DNT signals, and YouMailEngine does not currently respond to such signals <strong>PRIVACY POLICY</strong>.</p>
+            <p>Some browsers offer a “Do Not Track” (DNT) feature. At this time, there is no uniform industry standard for recognizing DNT signals, and You Mail Engine does not currently respond to such signals <strong>PRIVACY POLICY</strong>.</p>
           </div>
 
           <div className="space-y-4">
@@ -80,7 +86,7 @@ const CookiePolicy = () => {
             <h2 className="text-2xl font-semibold text-zinc-900">8. Contact Us</h2>
             <p>If you have questions or concerns about this Cookie Policy or our use of cookies, you may contact us at:</p>
             <div className="font-bold text-zinc-900">
-              <p>YouMailEngine</p>
+              <p>You Mail Engine</p>
               <p>Email: info@youmailengine.com</p>
             </div>
           </div>

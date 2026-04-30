@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Is YouMailEngine an official email provider?",
+      question: "Is You Mail Engine an official email provider?",
       answer:
-        "No. YouMailEngine is an independent website created for learning purposes. We are not connected to any email company or service. All content is written to help users understand email in a simple way.",
+        "No. You Mail Engine is an independent website created for learning purposes. We are not connected to any email company or service. All content is written to help users understand email in a simple way.",
     },
     {
       question: "What can I learn from this website?",

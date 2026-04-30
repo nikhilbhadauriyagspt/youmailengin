@@ -100,7 +100,7 @@ const Footer = () => {
               <button onClick={() => handleNavClick("/")} className="mb-4">
                 <img
                   src="/logo.avif"
-                  alt="YouMailEngine"
+                  alt="You Mail Engine"
                   width="200"
                   height="72"
                   className="h-18 w-auto object-contain"
@@ -108,7 +108,7 @@ const Footer = () => {
               </button>
 
               <p className="text-slate-600 text-[15px] leading-7 max-w-md">
-                YouMailEngine is an informational website that explains email topics,
+                You Mail Engine is an informational website that explains email topics,
                 features, privacy, and everyday usage in clear, simple language.
               </p>
             </div>
@@ -163,7 +163,7 @@ const Footer = () => {
         <div className="border-t border-slate-100">
           <div className="max-w-[1800px] mx-auto px-6 lg:px-16 py-5 flex flex-col lg:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-500">
-              © {currentYear} YouMailEngine. All rights reserved.
+              © {currentYear} You Mail Engine. All rights reserved.
             </p>
 
             <div className="flex flex-wrap justify-center gap-5">

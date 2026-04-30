@@ -61,7 +61,7 @@ const About = () => {
     <main className="bg-white pt-24 pb-20">
       <SEO 
         title="About" 
-        description="Learn about YouMailEngine and our mission to provide clear, human-friendly email information for everyday users."
+        description="Learn about You Mail Engine and our mission to provide clear, human-friendly email information for everyday users."
       />
       {/* Heading */}
       <section className="px-6 lg:px-10">
@@ -75,11 +75,11 @@ const About = () => {
           </p>
 
           <h1 className="text-3xl md:text-4xl tracking-[0.1em] font-serif text-zinc-950">
-            About <span className="text-blue-700 italic">YouMailEngine</span>
+            About <span className="text-blue-700 italic">You Mail Engine</span>
           </h1>
 
           <p className="mt-6 max-w-2xl mx-auto text-zinc-600 leading-8">
-            YouMailEngine is an informational website made to explain email topics in
+            You Mail Engine is an informational website made to explain email topics in
             a simple, human, and easy-to-understand way.
           </p>
         </div>
@@ -107,7 +107,7 @@ const About = () => {
 
             <p className="text-zinc-700 leading-8 mb-8">
               Email is part of everyday digital life, but many people still find
-              its settings, features, and safety terms confusing. YouMailEngine was
+              its settings, features, and safety terms confusing. You Mail Engine was
               created to make these topics easier to understand through simple
               guides, clear explanations, and practical learning content.
             </p>

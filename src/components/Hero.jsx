@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white">
+      {/* Visually hidden H1 for SEO */}
+      <h1 className="sr-only">You Mail Engine - Educational Email Guides & Knowledge Base</h1>
+      
       <div className="w-full h-full flex justify-center items-center">
         {/* Background Image - Clickable */}
         <Link to="/guides" className="w-full cursor-pointer block">

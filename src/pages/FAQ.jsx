@@ -5,13 +5,13 @@ import SEO from '../components/SEO';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery] = useState("");
 
   const faqs = [
     {
       category: "General",
-      question: "Is YouMailEngine an official email provider?",
-      answer: "No. YouMailEngine is an independent educational platform. We are not affiliated with email service provider. Our mission is strictly to provide clear, actionable information about how to use these services effectively."
+      question: "Is You Mail Engine an official email provider?",
+      answer: "No. You Mail Engine is an independent educational platform. We are not affiliated with email service provider. Our mission is strictly to provide clear, actionable information about how to use these services effectively."
     },
     {
       category: "Learning",
@@ -49,7 +49,7 @@ const FAQ = () => {
     <div className="bg-zinc-50 min-h-screen">
       <SEO 
         title="FAQ" 
-        description="Find answers to common questions about YouMailEngine, our email guides, and how we help you improve your digital skills."
+        description="Find answers to common questions about You Mail Engine, our email guides, and how we help you improve your digital skills."
       />
       {/* Header Section */}
       <section className="bg-white pt-32 pb-20 border-b border-zinc-100">

@@ -1,0 +1,49 @@
+# You Mail Engine - Full Documentation
+
+You Mail Engine is a modern, responsive React-based web application built with Vite and Tailwind CSS. It serves as an educational hub for email management and digital literacy.
+
+## Project Architecture
+
+### Frontend
+- **Framework**: React 19.
+- **Build Tool**: Vite.
+- **Styling**: Tailwind CSS 4.
+- **Routing**: React Router 7.
+- **Icons**: Lucide React for consistent UI iconography.
+- **SEO Management**: React Helmet Async for dynamic meta tags and structured data.
+
+### Main Components
+- **Header**: Responsive navigation with scroll detection and smooth hash-link scrolling.
+- **Hero**: Visually impactful landing section with a primary CTA.
+- **AboutSection**: Explains the mission and core values of the platform.
+- **Guides**: A collection of educational articles (data-driven via `guidesData.jsx`).
+- **FAQSection**: Categorized, searchable, and interactive accordion for common queries.
+- **SecurityTips**: Actionable advice for email safety.
+- **SEO**: Centralized SEO component for managing canonicals, meta tags, and Open Graph data.
+
+### Pages
+- **Home**: Main landing page showcasing all sections.
+- **About**: Detailed "About Us" page.
+- **Guides**: Listing page for all email tutorials.
+- **GuideDetail**: Dynamic page for individual guide content.
+- **FAQ**: Comprehensive question-and-answer page.
+- **Steps**: Walkthroughs for common email tasks.
+- **Contact**: User inquiry form.
+
+### Policies
+- **Privacy Policy**
+- **Terms of Service**
+- **Cookie Policy**
+- **Refund Policy**
+- **Disclaimer**
+
+## Key Workflows
+- **Navigation**: Uses `react-router-dom` for SPA navigation and a custom `ScrollToHash` hook for handling internal document links.
+- **SEO Optimization**: Implements automatic canonical URLs, semantic HTML (article tags), and dynamic sitemaps.
+- **Asset Management**: Uses AVIF format for optimized image loading and preloads LCP (Largest Contentful Paint) images in `index.html`.
+
+## Development Scripts
+- `npm run dev`: Starts the development server.
+- `npm run build`: Compiles the application for production.
+- `npm run lint`: Performs static code analysis using ESLint.
+- `npm run preview`: Previews the production build locally.

@@ -51,9 +51,9 @@ const AboutSection = () => {
           
           <div className="space-y-8">
             <div>
-              <p className="text-blue-700 font-bold tracking-[0.25em] uppercase text-[12px] mb-5">
+              <h2 className="text-blue-700 font-bold tracking-[0.25em] uppercase text-[12px] mb-5">
                 About Us
-              </p>
+              </h2>
 
               <p className="text-base md:text-[17px] text-zinc-600 leading-[2] max-w-xl">
                 This website is created to share simple and useful information
@@ -102,9 +102,9 @@ const AboutSection = () => {
                 <Mail className="w-11 h-11" />
               </div>
 
-              <h3 className="text-2xl font-bold text-zinc-900 mb-4">
+              <h4 className="text-2xl font-bold text-zinc-900 mb-4">
                 Learn Email in a Simple Way
-              </h3>
+              </h4>
 
               <p className="text-zinc-600 text-[15px] leading-relaxed">
                 Explore clear, beginner-friendly email information written for
@@ -114,11 +114,11 @@ const AboutSection = () => {
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-5xl xl:text-6xl font-serif text-zinc-900 leading-[1.08] mb-8">
+            <h3 className="text-4xl md:text-5xl xl:text-6xl font-serif text-zinc-900 leading-[1.08] mb-8">
               Clear email <br />
               information for <br />
               <span className="text-blue-700">everyday users.</span>
-            </h2>
+            </h3>
 
             <p className="text-zinc-600 text-[16px] leading-relaxed max-w-xl mb-8">
               Our content explains email topics in a simple, honest, and

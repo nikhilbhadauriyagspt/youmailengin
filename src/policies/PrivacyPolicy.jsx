@@ -1,17 +1,23 @@
+import SEO from "../components/SEO";
+
 const PrivacyPolicy = () => {
   return (
     <section className="py-24 bg-white font-sans text-zinc-900 min-h-screen">
+      <SEO 
+        title="Privacy Policy" 
+        description="Learn about how You Mail Engine handles and protects your data. Read our privacy policy to understand your rights."
+      />
       <div className="max-w-[1000px] mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-blue-800 uppercase tracking-tight">PRIVACY POLICY</h1>
         <p className="text-zinc-600 mb-12 border-b border-zinc-100 pb-8 uppercase font-bold tracking-widest">Last updated April 28, 2026</p>
 
         <div className="prose prose-zinc max-w-none text-[16px] leading-relaxed text-zinc-700 space-y-8">
           <p>
-            This Privacy Notice for <strong>YouMailEngine</strong> ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+            This Privacy Notice for <strong>You Mail Engine</strong> ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
           </p>
           <ul className="list-disc pl-6 space-y-2 font-medium">
             <li>Visit our website at <a href="https://youmailengine.com/" className="text-blue-800 underline">https://youmailengine.com/</a> or any website of ours that links to this Privacy Notice</li>
-            <li>Use YouMailEngine. At YouMailEngine, we focus on providing high-quality educational guides and resources to help users manage their email accounts effectively. Our business is built on providing clarity and informative content.</li>
+            <li>Use You Mail Engine. At You Mail Engine, we focus on providing high-quality educational guides and resources to help users manage their email accounts effectively. Our business is built on providing clarity and informative content.</li>
             <li>Engage with us in other related ways, including any marketing or events</li>
           </ul>
           <p>
@@ -169,7 +175,7 @@ const PrivacyPolicy = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-zinc-900">13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
               <p>If you have questions or comments about this notice, you may email us at <span className="text-blue-800 font-medium">info@youmailengine.com</span> or contact us by post at:</p>
-              <p className="font-bold text-zinc-900">YouMailEngine Team</p>
+              <p className="font-bold text-zinc-900">You Mail Engine Team</p>
             </section>
 
             <section className="space-y-4">
