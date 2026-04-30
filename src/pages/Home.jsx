@@ -5,6 +5,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import HowItWorks from '../components/HowItWorks';
 import FAQSection from '../components/FAQSection';
+import SEO from '../components/SEO';
 
 const Home = () => {
   const location = useLocation();
@@ -24,6 +25,10 @@ const Home = () => {
 
   return (
     <>
+      <SEO 
+        title="Home" 
+        description="YouMailEngine provides simple, jargon-free email guides to help you master your inbox, secure your privacy, and understand digital communication."
+      />
       <div id="home"><Hero /></div>
       <div id="about"><AboutSection /></div>
       <div id="services"><ServicesSection /></div>

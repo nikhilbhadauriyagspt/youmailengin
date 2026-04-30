@@ -4,7 +4,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
 import Home from './pages/Home';
+import About from './pages/About';
 import Guides from './pages/Guides';
+import Steps from './pages/Steps';
+import FAQ from './pages/FAQ';
 import GuideDetail from './pages/GuideDetail';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './policies/PrivacyPolicy';
@@ -41,7 +44,10 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/guides" element={<Guides />} />
+            <Route path="/steps" element={<Steps />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/guides/:id" element={<GuideDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

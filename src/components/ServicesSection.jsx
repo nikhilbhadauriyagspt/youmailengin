@@ -1,77 +1,99 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronRight, ArrowUpRight } from 'lucide-react';
-import { guidesData } from '../data/guidesData.jsx';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ChevronRight, ArrowUpRight, MailCheck } from "lucide-react";
+import { guidesData } from "../data/guidesData.jsx";
 
 const ServicesSection = () => {
-  // Show first 6 services on home page
   const displayServices = guidesData.slice(0, 6);
 
   return (
-    <section id="services" className="py-24 bg-white w-full border-b border-zinc-100">
-      <div className="max-w-[1800px] mx-auto px-6 lg:px-16">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
-          <div className="max-w-3xl">
-            <p className="text-blue-600 font-bold tracking-[0.15em] uppercase text-[12px] mb-4">Our Resources</p>
-            <h2 className="text-3xl md:text-4xl  text-zinc-900 mb-6 leading-tight">
-              Comprehensive <span className="text-blue-700">Email Guides.</span>
-            </h2>
-            <p className="text-zinc-500 text-lg md:text-[19px] leading-relaxed">
-              From initial setup to advanced security, our tutorials are designed to assist you in mastering your email tools.
-            </p>
+    <section
+      id="services"
+      className="relative w-full overflow-hidden bg-[#f8fafc] py-20 lg:py-28 border-b border-zinc-100"
+    >
+      <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-blue-100/50 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-amber-100/50 rounded-full blur-3xl" />
+
+      <div className="relative max-w-[1600px] mx-auto px-6 lg:px-16">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-white border border-zinc-200 px-4 py-2 rounded-full mb-5 shadow-sm">
+            <MailCheck className="w-4 h-4 text-blue-600" />
+            <span className="text-blue-700 font-bold tracking-[0.16em] uppercase text-[11px]">
+              Email Learning Resources
+            </span>
           </div>
-          <div className="hidden lg:block">
-            <Link 
-              to="/guides" 
-              className="group inline-flex items-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-200"
-            >
-              Browse All Guides
-              <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </Link>
-          </div>
+
+          <h2 className="text-3xl md:text-4xl font-serif text-zinc-900 mb-6 leading-tight">
+            Simple guides to understand{" "}
+            <span className="text-blue-700">email better.</span>
+          </h2>
+
+          <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
+            Read clear, human-friendly email articles made for everyday users.
+            Learn about email basics, settings, privacy, inbox management, and
+            safe usage without confusing technical words.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
           {displayServices.map((service, index) => (
-            <Link 
+            <Link
               key={index}
               to={`/guides/${service.id}`}
-              className="group relative bg-white p-8 rounded-3xl border border-zinc-100 hover:border-blue-200 transition-all duration-300 hover:shadow-2xl hover:shadow-zinc-200/40 overflow-hidden"
+              className="group relative min-h-[300px] rounded-[2rem] bg-white border border-zinc-100 p-7 lg:p-8 shadow-sm hover:shadow-[0_24px_70px_rgba(15,23,42,0.10)] transition-all duration-500 overflow-hidden"
             >
-              <div className="flex justify-between items-start mb-10">
-                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-colors duration-300 ${service.bg.replace('bg-', 'bg-').replace('50', '100')} ${service.color} group-hover:bg-blue-600 group-hover:text-white`}>
-                  {React.cloneElement(service.icon, { className: "w-6 h-6 stroke-[2]" })}
-                </div>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
-                  <div className="w-10 h-10 rounded-full bg-zinc-50 flex items-center justify-center">
-                    <ArrowUpRight className="w-5 h-5 text-zinc-400" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="flex items-start justify-between mb-8">
+                  <div
+                    className={`w-16 h-16 rounded-3xl flex items-center justify-center border transition-all duration-300 ${service.bg} ${service.color} group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600`}
+                  >
+                    {React.cloneElement(service.icon, {
+                      className: "w-7 h-7 stroke-[2]",
+                    })}
+                  </div>
+
+                  <div className="w-11 h-11 rounded-full bg-zinc-50 border border-zinc-100 flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <ArrowUpRight className="w-5 h-5 text-zinc-500" />
                   </div>
                 </div>
+
+                <div className="mb-7">
+                  <span className="inline-block text-[12px] font-bold text-blue-700 bg-blue-50 px-3 py-1 rounded-full mb-4">
+                    Guide {String(index + 1).padStart(2, "0")}
+                  </span>
+
+                  <h3 className="text-xl lg:text-2xl font-bold text-zinc-900 mb-4 leading-snug group-hover:text-blue-700 transition-colors">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-[15px] text-zinc-600 leading-relaxed">
+                    {service.shortDesc}
+                  </p>
+                </div>
+
+                <div className="mt-auto pt-6 border-t border-zinc-100 flex items-center justify-between">
+                  <span className="text-[14px] font-bold text-zinc-900 group-hover:text-blue-700 transition-colors">
+                    Read guide
+                  </span>
+
+                  <span className="w-9 h-9 rounded-full bg-zinc-900 text-white flex items-center justify-center group-hover:bg-blue-700 transition-colors">
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
+                </div>
               </div>
-              
-              <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-blue-700 transition-colors">{service.title}</h3>
-              <p className="text-[15px] text-zinc-500 leading-relaxed mb-6">
-                {service.shortDesc}
-              </p>
-              
-              <div className="inline-flex items-center gap-1.5 text-[14px] font-bold text-zinc-900 group-hover:text-blue-700 transition-colors">
-                Learn more
-                <ChevronRight className="w-4 h-4" />
-              </div>
-              
-              {/* Subtle accent line on hover */}
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             </Link>
           ))}
         </div>
 
-        <div className="mt-12 lg:hidden">
-          <Link 
-            to="/guides" 
-            className="flex items-center justify-center gap-2 bg-zinc-900 text-white w-full py-4 rounded-2xl font-bold"
+        <div className="mt-14 flex justify-center">
+          <Link
+            to="/guides"
+            className="group inline-flex items-center gap-3 bg-zinc-900 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-blue-200"
           >
-            View All Email Guides
-            <ChevronRight className="w-5 h-5" />
+            Browse All Email Guides
+            <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </Link>
         </div>
       </div>

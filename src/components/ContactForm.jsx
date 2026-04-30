@@ -29,7 +29,7 @@ const ContactForm = () => {
         body: JSON.stringify({
           ...formData,
           subject: `Support Inquiry: ${formData.issue}`,
-          to_email: 'info@mailbaba.co'
+          to_email: 'info@youmailengine.com'
         }),
       });
 
@@ -54,7 +54,7 @@ const ContactForm = () => {
            
 
             <a 
-              href="mailto:info@mailbaba.co"
+              href="mailto:info@youmailengine.com"
               className="flex gap-5 p-8 rounded-3xl bg-zinc-50 border border-zinc-100/50 hover:bg-white hover:border-blue-100 hover:shadow-2xl hover:shadow-zinc-200/40 transition-all duration-500 group"
             >
               <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-blue-600 shadow-sm border border-zinc-100 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shrink-0">
@@ -62,7 +62,7 @@ const ContactForm = () => {
               </div>
               <div>
                 <h4 className="text-[11px] font-bold text-zinc-400 uppercase tracking-widest mb-1">Email Us</h4>
-                <p className="text-xl font-bold text-zinc-900 group-hover:text-blue-700 transition-colors">info@mailbaba.co</p>
+                <p className="text-xl font-bold text-zinc-900 group-hover:text-blue-700 transition-colors">info@youmailengine.com</p>
               </div>
             </a>
           </div>

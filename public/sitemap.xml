@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mailbaba.co/</loc>
+    <loc>https://youmailengine.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mailbaba.co/guides</loc>
+    <loc>https://youmailengine.com/guides</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mailbaba.co/contact</loc>
+    <loc>https://youmailengine.com/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mailbaba.co/privacy</loc>
+    <loc>https://youmailengine.com/privacy</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://mailbaba.co/terms</loc>
+    <loc>https://youmailengine.com/terms</loc>
     <priority>0.3</priority>
   </url>
 </urlset>
